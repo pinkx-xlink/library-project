@@ -10,6 +10,7 @@ function Book(title, author, pages){
     // this.displayInfo = function() {
     //     console.log(`"${this.title}" by ${this.author} has ${this.pages} pages.`)
     // };
+    return this.info;
 }
 
 const book1 = new Book('The Well of Loneliness', 'Radclyffe Hall', 399);
