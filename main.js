@@ -7,3 +7,5 @@ function Book(title, author, pages, readStatus){
         console.log(input);
     }
 }
+
+const book1 = new Book('The Well of Loneliness', 'Radclyffe Hall', 399);
