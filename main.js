@@ -15,3 +15,4 @@ function Book(title, author, pages){
 const book1 = new Book('The Well of Loneliness', 'Radclyffe Hall', 399);
 book1.readStatus();
 //book1.displayInfo();
+console.log(book1.info);
