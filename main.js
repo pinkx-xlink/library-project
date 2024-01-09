@@ -41,9 +41,10 @@ function displayBook(myLibrary) {
             newCard.setAttribute('id', 'new-card');
             newCard.innerHTML+= `<div>${Book.info}</div>`;
             shelf.appendChild(newCard);
+        } else {
+            console.log('thats all the books, kid.');
         }
     }
     
 };
-displayBook(book1);
-displayBook(book2);
+
