@@ -42,3 +42,13 @@ function displayBook(Book) {
 };
 displayBook(book1);
 displayBook(book2);
+
+function displayLibrary() {
+    console.log(myLibrary);
+    for (i = 0; i > myLibrary.length; i++) {
+        if(i > myLibrary.length) {
+            
+        }
+    }
+}
+displayLibrary();
