@@ -1,12 +1,9 @@
 #new-card {
-    background-color: purple;
-    margin: 5px;
-}
-#book-card {
     background-color: blue;
     height: 300px;
     width: 200px;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 5px;
 }
