@@ -34,11 +34,16 @@ myLibrary.push(book2);
 
 const shelf = document.querySelector('#shelf');
 
-function displayBook(Book) {
-    const newCard = document.createElement('div');
-    newCard.setAttribute('id', 'new-card');
-    newCard.innerHTML+= `<div>${Book.info}</div>`;
-    shelf.appendChild(newCard);
+function displayBook(myLibrary) {
+    for(i = 0; i < myLibrary.length; i++) {
+        if(i < myLibrary.length){
+            const newCard = document.createElement('div');
+            newCard.setAttribute('id', 'new-card');
+            newCard.innerHTML+= `<div>${Book.info}</div>`;
+            shelf.appendChild(newCard);
+        }
+    }
+    
 };
 displayBook(book1);
 displayBook(book2);

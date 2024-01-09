@@ -1,0 +1,8 @@
+function displayBook(myLibrary) {
+    const newCard = document.createElement('div');
+    newCard.setAttribute('id', 'new-card');
+    newCard.innerHTML+= `<div>${this.info}</div>`;
+    shelf.appendChild(newCard);
+};
+displayBook(myLibrary[0]);
+displayBook(myLibrary[1]);
