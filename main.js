@@ -33,10 +33,11 @@ book2.format();
 myLibrary.push(book2);
 
 const shelf = document.querySelector('#shelf');
-
+const bookCard = document.createElement('div');
+bookCard.setAttribute('id', 'book-card');
 function displayBook() {
-    const bookCard = document.createElement('div');
+    
     bookCard.innerHTML = `example text ;p`;
     shelf.appendChild(bookCard);
-}
+};
 displayBook();
