@@ -33,6 +33,8 @@ book2.format();
 myLibrary.push(book2);
 
 function displayBook() {
- console.log(this === window);
+    const bookCard = document.createElement('div');
+    bookCard.innerHTML = `example text ;p`;
+    body.appendChild(bookCard);
 }
 displayBook();
