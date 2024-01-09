@@ -25,11 +25,14 @@ Book.prototype.format = function addBookToLibrary() {
     console.log(this);
     return this.info;
     //store this as a new Book obj into the array
-    // myLibrary.call(this);
-    // myLibrary.push.apply(this);
 }
 book1.format();
 myLibrary.push(book1);
 
 book2.format();
 myLibrary.push(book2);
+
+function displayBook() {
+ console.log(this === window);
+}
+displayBook();
