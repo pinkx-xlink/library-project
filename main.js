@@ -17,7 +17,10 @@ const book1 = new Book('The Well of Loneliness', 'Radclyffe Hall', 399);
 book1.readStatus();
 console.log(book1.info);
 
-function addBookToLibrary() {
+Book.prototype.format = function addBookToLibrary() {
+    console.log(this);
+    return this.info;
     //get user input
     //store this as a new Book obj into the array
 }
+book1.format();
