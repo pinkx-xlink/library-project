@@ -37,8 +37,9 @@ const bookCard = document.createElement('div');
 bookCard.setAttribute('id', 'book-card');
 function displayBook() {
     const newCard = document.createElement('div');
-    newCard.innerHTML = `did this work?`;
-    bookCard.appendChild(newCard);
+    newCard.setAttribute('id', 'new-card');
+    newCard.innerHTML+= `<div>did this work?</div>`;
+    shelf.appendChild(newCard);
     shelf.appendChild(bookCard);
 };
 displayBook();
