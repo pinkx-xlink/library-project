@@ -33,14 +33,13 @@ book2.format();
 myLibrary.push(book2);
 
 const shelf = document.querySelector('#shelf');
-const bookCard = document.createElement('div');
-bookCard.setAttribute('id', 'book-card');
+
 function displayBook(Book) {
     const newCard = document.createElement('div');
     newCard.setAttribute('id', 'new-card');
     newCard.innerHTML+= `<div>${this.info}</div>`;
     shelf.appendChild(newCard);
-    shelf.appendChild(bookCard);
+    
 };
 displayBook(book1.info);
 displayBook();
