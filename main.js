@@ -1,6 +1,5 @@
 const myLibrary = [];
 
-
 function Book(title, author, pages){
     this.title = title;
     this.author = author;
@@ -39,7 +38,7 @@ function displayBook(Book) {
         if (i < 3) {
             const newCard = document.createElement('div');
             newCard.setAttribute('id', 'new-card');
-            newCard.innerHTML+= `<div>${this.Book.info}</div>`;
+            newCard.innerHTML+= `<div>${myLibrary.splice("")}</div>`;
             shelf.appendChild(newCard);
             i++;
         } else if (i > 3) {
