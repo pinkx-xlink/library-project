@@ -36,7 +36,10 @@ const shelf = document.querySelector('#shelf');
 const bookCard = document.createElement('div');
 bookCard.setAttribute('id', 'book-card');
 function displayBook() {
-    bookCard.innerHTML = `${book1.info}`;
+    const newCard = document.createElement('div');
+    newCard.innerHTML = `did this work?`;
+    bookCard.appendChild(newCard);
     shelf.appendChild(bookCard);
 };
+displayBook();
 displayBook();
