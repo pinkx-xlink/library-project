@@ -35,16 +35,17 @@ myLibrary.push(book2);
 const shelf = document.querySelector('#shelf');
 
 function displayBook(myLibrary) {
-    for(i = 0; i < myLibrary.length; i++) {
-        if(i < myLibrary.length){
+    for(i = 0; i < 3;) {
+        if(i < 3){
             const newCard = document.createElement('div');
             newCard.setAttribute('id', 'new-card');
-            newCard.innerHTML+= `<div>${Book.info}</div>`;
+            newCard.innerHTML+= `<div>${Book}</div>`;
             shelf.appendChild(newCard);
+            i++;
         } else {
             console.log('thats all the books, kid.');
         }
     }
     
 };
-
+displayBook(myLibrary);
