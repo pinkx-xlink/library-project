@@ -30,3 +30,6 @@ Book.prototype.format = function addBookToLibrary() {
 }
 book1.format();
 myLibrary.push(book1);
+
+book2.format();
+myLibrary.push(book2);
