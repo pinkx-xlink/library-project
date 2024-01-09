@@ -1,6 +1,5 @@
 const myLibrary = [];
 
-
 function Book(title, author, pages){
     this.title = title;
     this.author = author;
@@ -18,9 +17,12 @@ book1.readStatus();
 console.log(book1.info);
 
 Book.prototype.format = function addBookToLibrary() {
+    //get user input
     console.log(this);
     return this.info;
-    //get user input
     //store this as a new Book obj into the array
+    // myLibrary.call(this);
+    // myLibrary.push.apply(this);
 }
 book1.format();
+myLibrary.push(book1);
