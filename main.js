@@ -37,9 +37,8 @@ const shelf = document.querySelector('#shelf');
 function displayBook(Book) {
     const newCard = document.createElement('div');
     newCard.setAttribute('id', 'new-card');
-    newCard.innerHTML+= `<div>${this.info}</div>`;
+    newCard.innerHTML+= `<div>${Book.info}</div>`;
     shelf.appendChild(newCard);
-    
 };
-displayBook(book1.info);
-displayBook();
+displayBook(book1);
+displayBook(book2);
