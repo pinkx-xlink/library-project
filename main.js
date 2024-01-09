@@ -32,9 +32,11 @@ myLibrary.push(book1);
 book2.format();
 myLibrary.push(book2);
 
+const shelf = document.querySelector('#shelf');
+
 function displayBook() {
     const bookCard = document.createElement('div');
     bookCard.innerHTML = `example text ;p`;
-    body.appendChild(bookCard);
+    shelf.appendChild(bookCard);
 }
 displayBook();
