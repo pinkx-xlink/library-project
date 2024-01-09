@@ -15,7 +15,6 @@ function Book(title, author, pages){
 
 const book1 = new Book('The Well of Loneliness', 'Radclyffe Hall', 399);
 book1.readStatus();
-console.log(book1.info);
 
 const book2 = new Book('All the Bright places', 'Jennifer Niven', 416);
 book2.readStatus();
