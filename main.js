@@ -38,9 +38,10 @@ function displayBook(Book) {
         if (i < 3) {
             const newCard = document.createElement('div');
             newCard.setAttribute('id', 'new-card');
-            newCard.innerHTML+= `<div>${myLibrary.splice("")}</div>`;
+            newCard.innerHTML+= `<div>${Book.info}</div>`;
             shelf.appendChild(newCard);
             i++;
+            myLibrary.length +=1;
         } else if (i > 3) {
             console.log('thats all the books, kid.'); // does not log
         };
