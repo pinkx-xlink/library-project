@@ -41,10 +41,19 @@ function displayBook(myLibrary) {
             newCard.innerHTML+= `<div>${Book.info}</div>`;
             shelf.appendChild(newCard);
             i++;
-            myLibrary.length +=2;
+            myLibrary.length +=1;
         } else if (i > 3) {
             console.log('thats all the books, kid.'); // does not log
         };
     };
 };
 displayBook(myLibrary);
+
+const newBookBtn = document.querySelector('#new-book-btn');
+newBookBtn.addEventListener('click', function () {
+    const inputCard = document.createElement('div');
+    inputCard.setAttribute('id', 'inputCard');
+    inputCard.classList.add('inputCard');
+    inputCard.innerHTML = `<div>did this work?</div>`
+    shelf.appendChild('inputCard');
+});
