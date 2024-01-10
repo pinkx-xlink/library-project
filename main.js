@@ -95,9 +95,7 @@ newBookBtn.addEventListener("click", createNewBook);
 
 const submitFormBtn = document.querySelector("#submit-form");
 function submitBookForm() {
-  console.log("testing");
   getUserInput();
-  
 }
 
 
