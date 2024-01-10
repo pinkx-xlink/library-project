@@ -12,22 +12,22 @@ function Book (title, author, pages) {
   return this.info;
 }
 
-const book1 = new Book('The Well of Loneliness', 'Radclyffe Hall', 399);
-book1.readStatus();
-const book2 = new Book('All the Bright places', 'Jennifer Niven', 416);
-book2.readStatus();
+// const book1 = new Book('The Well of Loneliness', 'Radclyffe Hall', 399);
+// book1.readStatus();
+// const book2 = new Book('All the Bright places', 'Jennifer Niven', 416);
+// book2.readStatus();
 
-Book.prototype.format = function addBookToLibrary () {
-  // get user input
-  console.log(this);
-  return this.info;
-  // store this as a new Book obj into the array
-};
+// Book.prototype.format = function addBookToLibrary () {
+//   // get user input
+//   console.log(this);
+//   return this.info;
+//   // store this as a new Book obj into the array
+// };
 
-book1.format();
-myLibrary.push(book1);
-book2.format();
-myLibrary.push(book2);
+// book1.format();
+// myLibrary.push(book1);
+// book2.format();
+// myLibrary.push(book2);
 
 const shelf = document.querySelector('#shelf');
 
