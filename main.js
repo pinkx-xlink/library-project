@@ -95,12 +95,7 @@ function getUserInput() {
         this.pagesInput = pagesInput;
     }
     BookCard.prototype.appendBook = function () {
-        const newBookCard = document.createElement('div');
-        newBookCard.setAttribute('id', 'newBookCard');
-        newBookCard.classList.add('newBookCard');
-        h1.appendChild(newBookCard);
         console.log('here.s the new book babe');
-        this.BookCard.appendBook();
     }
     
 }
