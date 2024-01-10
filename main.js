@@ -1,11 +1,11 @@
 const myLibrary = [];
 
-function Book(title, author, pages){
+function Book (title, author, pages) {
   this.title = title;
   this.author = author;
   this.pages = pages;
   this.info = String(`"${this.title}" by ${this.author} has ${this.pages} pages.`)
-  this.readStatus = function() {
+  this.readStatus = function () {
     const input = prompt(`Have you read ${this.title} yet?`);
     console.log(`"Have you read ${this.title} yet?" ${input}.`);
   };
@@ -19,11 +19,11 @@ const book2 = new Book('All the Bright places', 'Jennifer Niven', 416);
 book2.readStatus();
 
 
-Book.prototype.format = function addBookToLibrary() {
-  //get user input
+Book.prototype.format = function addBookToLibrary () {
+  // get user input
   console.log(this);
   return this.info;
-  //store this as a new Book obj into the array
+  // store this as a new Book obj into the array
 };
 
 book1.format();
@@ -34,21 +34,21 @@ myLibrary.push(book2);
 
 const shelf = document.querySelector('#shelf');
 
-function displayBook(myLibrary) {
+function displayBook (myLibrary) {
   for (let i = 0; i < 3;) {
-      const newCard = document.createElement('div');
-      newCard.setAttribute('id', 'new-card');
-      newCard.innerHTML+= `<div>${Book.info}</div>`;
-      shelf.appendChild(newCard);
-      i++;
+    const newCard = document.createElement('div');
+    newCard.setAttribute('id', 'new-card');
+    newCard.innerHTML+= `<div>${Book.info}</div>`;
+    shelf.appendChild(newCard);
+    i++;
   }
 }
 displayBook(myLibrary);
 
 const newBookBtn = document.querySelector('#new-book-btn');
-//newBookBtn.addEventListener("click", createNewBook);
+// newBookBtn.addEventListener("click", createNewBook);
 const h1 = document.querySelector('h1');
-function createNewBook() {
+function createNewBook () {
   const inputCard = document.createElement('div');
   inputCard.setAttribute('id', 'inputCard');
   inputCard.classList.add('inputCard');
@@ -75,35 +75,36 @@ function createNewBook() {
         <button id="delete-form">Nevermind</button>
       </div>
     `;
-    // document.getElementById("input-form").onsubmit = function(event) {
-    //     event.preventDefault(); 
-    // };
+  // document.getElementById("input-form").onsubmit = function(event) {
+  //     event.preventDefault(); 
+  // };
   h1.appendChild(inputCard);
 }
 
-function getUserInput() {
-    const titleInput = document.getElementById('title_input').value;
-    console.log(titleInput);
-    const authorInput = document.getElementById("author_input").value;
-    console.log(authorInput);
-    const pagesInput = document.getElementById("pages_input").value;
-    console.log(pagesInput);
-    function BookCard(titleInput, authorInput, pagesInput) {
-        this.titleInput = titleInput;
-        this.authorInput = authorInput;
-        this.pagesInput = pagesInput;
-        this.infoFromInput = String(`"${this.titleInput}" by ${this.authorInput} has ${this.pagesInput} pages.`)
-    } 
-
-    const newBookCard = document.createElement('div');
-    newBookCard.setAttribute('id', 'newBookCard');
-    newBookCard.innerHTML = `<div> did this work? </div>`;
-    shelf.appendChild('newBookCard');
-    // const book3 = new BookCard("example", "example", "555");
-    // console.log("new book");
-    // console.log(`${book3.infoFromInput}`);
-
+function getUserInput () {
+  const titleInput = document.getElementById('title_input').value;
+  console.log(titleInput);
+  const authorInput = document.getElementById("author_input").value;
+  console.log(authorInput);
+  const pagesInput = document.getElementById("pages_input").value;
+  console.log(pagesInput);
+  function BookCard (titleInput, authorInput, pagesInput) {
+    this.titleInput = titleInput;
+    this.authorInput = authorInput;
+    this.pagesInput = pagesInput;
+    this.infoFromInput = String(`"${this.titleInput}" by ${this.authorInput} has ${this.pagesInput} pages.`)
+  }
+  const newBookCard = document.createElement('div');
+  newBookCard.setAttribute('id', 'newBookCard');
+  newBookCard.innerHTML = `<div> did this work? </div>`;
+  // shelf.appendChild('newBookCard');
+  // const book3 = new BookCard("example", "example", "555");
+  // console.log("new book");
+  // console.log(`${book3.infoFromInput}`);
 }
+// the user's input console.logs onclick of Add Book Btn, 
+// but now I need that info to populate in an HTML Element
+// Get the userInput
 
 newBookBtn.addEventListener("click", createNewBook);
 
