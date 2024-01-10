@@ -11,21 +11,17 @@ function Book (title, author, pages) {
   };
   return this.info;
 }
-
 // Book.prototype.format = function addBookToLibrary () {
 //   // get user input
 //   console.log(this);
 //   return this.info;
 //   // store this as a new Book obj into the array
 // };
-
 // book1.format();
 // myLibrary.push(book1);
 // book2.format();
 // myLibrary.push(book2);
-
 const shelf = document.querySelector('#shelf');
-
 // function displayBook (myLibrary) {
 //   for (let i = 0; i < 3;) {
 //     const newCard = document.createElement('div');
@@ -36,7 +32,6 @@ const shelf = document.querySelector('#shelf');
 //   }
 // }
 // displayBook(myLibrary);
-
 const newBookBtn = document.querySelector('#new-book-btn');
 // newBookBtn.addEventListener("click", createNewBook);
 const h1 = document.querySelector('h1');
@@ -72,7 +67,6 @@ function createNewBook () {
   // };
   h1.appendChild(inputCard);
 }
-
 function getUserInput () {
   const titleInput = document.getElementById('title_input').value;
   console.log(titleInput);
@@ -82,6 +76,7 @@ function getUserInput () {
   console.log(pagesInput);
   this.infoFromInput = String(`"${titleInput}" by ${authorInput} has ${pagesInput} pages.`);
   console.log(infoFromInput);
+  return this.infoFromInput;
 }
 // the user's input console.logs onclick of Add Book Btn, 
 // but now I need that info to populate in an HTML Element
