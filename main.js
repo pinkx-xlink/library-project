@@ -82,5 +82,10 @@ function createNewBook() {
     h1.appendChild(inputCard)
 }
 
-const dialog = document.getElementById('');
+// dialog = document.getElementById('');
 newBookBtn.addEventListener("click", createNewBook)
+
+const submitFormBtn = document.querySelector("#submit-form");
+submitFormBtn.addEventListener("click", function() {
+    prompt("testing");
+})
