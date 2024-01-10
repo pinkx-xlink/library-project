@@ -90,6 +90,13 @@ function getUserInput() {
     const pagesInput = document.getElementById("pages_input").value;
     console.log(pagesInput);
 }
+function appendNewBook() {
+  const newBookCard = document.createElement('div');
+  newBookCard.setAttribute('id', 'newBookCard');
+  newBookCard.classList.add('newBookCard');
+  console.log('here.s the new book babe');
+  //newBookCard.innerHTML =
+}
 
 newBookBtn.addEventListener("click", createNewBook);
 
