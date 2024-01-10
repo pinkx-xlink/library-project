@@ -50,24 +50,16 @@ function displayBook(myLibrary) {
 displayBook(myLibrary);
 
 const newBookBtn = document.querySelector('#new-book-btn');
-newBookBtn.addEventListener("click", createNewBook);
+//newBookBtn.addEventListener("click", createNewBook);
 
 function createNewBook() {
     const inputCard = document.createElement('div');
     inputCard.setAttribute('id', 'inputCard');
     inputCard.classList.add('inputCard');
     inputCard.innerHTML = `
-    <dialog id="dialog">
-      <form method="dialog"> 
-        <p>
-          <label>
-            Title:
-            <input type="text" required />
-          </label>
-        </p>
-        
-      </form>
-    </dialog>
+   
     <div>did this work?</div>`;
     shelf.appendChild(inputCard)
 }
+
+const dialog = document.getElementById('show-dialog');

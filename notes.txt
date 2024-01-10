@@ -6,3 +6,34 @@ function displayBook(myLibrary) {
 };
 displayBook(myLibrary[0]);
 displayBook(myLibrary[1]);
+
+
+
+
+
+ <dialog id="dialog">
+      <form method="dialog"> 
+        <p>
+          <label>
+            Title:
+            <input type="text" required />
+          </label>
+        </p>
+        <div>
+        <input type="submit" id="normal-close" value="Normal close" />
+        <input
+          type="submit"
+          id="novalidate-close"
+          value="Novalidate close"
+          formnovalidate />
+        <input type="submit" id="js-close" value="JS close" />
+      </div>
+      </form>
+    </dialog>
+
+newBookBtn.addEventListener("click", () => {
+    dialog.showModal();
+})
+
+
+
