@@ -98,6 +98,3 @@ function submitBookForm() {
   getUserInput();
 }
 
-
-
-//submitFormBtn.addEventListener("click", submitBookForm);
