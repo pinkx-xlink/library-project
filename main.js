@@ -57,5 +57,5 @@ function createNewBook() {
     inputCard.setAttribute('id', 'inputCard');
     inputCard.classList.add('inputCard');
     inputCard.innerHTML = `<div>did this work?</div>`
-    shelf.appendChild('inputCard')
+    shelf.appendChild(inputCard)
 }
