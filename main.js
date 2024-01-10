@@ -94,16 +94,12 @@ function getUserInput() {
         this.authorInput = authorInput;
         this.pagesInput = pagesInput;
     }
-    BookCard.prototype.appendBook = function () {
-        console.log('here.s the new book babe');
-    }
-    
 }
 
 newBookBtn.addEventListener("click", createNewBook);
+
 
 const submitFormBtn = document.querySelector("#submit-form");
 function submitBookForm() {
   getUserInput();
 }
-
