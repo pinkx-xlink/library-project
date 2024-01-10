@@ -56,6 +56,18 @@ function createNewBook() {
     const inputCard = document.createElement('div');
     inputCard.setAttribute('id', 'inputCard');
     inputCard.classList.add('inputCard');
-    inputCard.innerHTML = `<div>did this work?</div>`
+    inputCard.innerHTML = `
+    <dialog id="dialog">
+      <form method="dialog"> 
+        <p>
+          <label>
+            Title:
+            <input type="text" required />
+          </label>
+        </p>
+        
+      </form>
+    </dialog>
+    <div>did this work?</div>`;
     shelf.appendChild(inputCard)
 }
