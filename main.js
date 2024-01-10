@@ -96,8 +96,11 @@ function getUserInput() {
         this.titleInput = titleInput;
         this.authorInput = authorInput;
         this.pagesInput = pagesInput;
+        this.infoFromInput = String(`"${this.titleInput}" by ${this.authorInput} has ${this.pagesInput} pages.`)
     } 
-
+    const book3 = new BookCard("example", "example", "555");
+    console.log("new book");
+    console.log(`${book3.infoFromInput}`);
 }
 
 newBookBtn.addEventListener("click", createNewBook);
