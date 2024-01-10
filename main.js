@@ -81,10 +81,14 @@ function createNewBook() {
     `;
   h1.appendChild(inputCard);
 }
-const titleInput = document.getElementById("title_input");
 
-const authorInput = document.getElementById("author_input");
-const pagesInput = document.getElementById("pages_input");
+function getTitleInput() {
+    const titleInput = document.getElementById('title_input').value;
+}
+
+//const authorInput = document.getElementById("author_input").value;
+//const pagesInput = document.getElementById("pages_input").value;
+
 
 // dialog = document.getElementById('');
 newBookBtn.addEventListener("click", createNewBook);
@@ -92,6 +96,7 @@ newBookBtn.addEventListener("click", createNewBook);
 const submitFormBtn = document.querySelector("#submit-form");
 function submitBookForm() {
   console.log("testing");
+  //console.log(titleInput);
 }
 
 
