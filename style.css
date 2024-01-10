@@ -75,4 +75,5 @@ h1 {
 }
 #newBookCard {
     background-color: yellow;
+    border: 5px solid black;
 }
