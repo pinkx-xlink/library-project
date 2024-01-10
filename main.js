@@ -41,7 +41,7 @@ function displayBook(myLibrary) {
       newCard.setAttribute('id', 'new-card');
       newCard.innerHTML+= `<div>${Book.info}</div>`;
       shelf.appendChild(newCard);
-      i++;   
+      i++;
     } else if (i > 3) {
       console.log('thats all the books, kid.'); // does not log
     };
@@ -98,9 +98,10 @@ function getUserInput() {
         this.pagesInput = pagesInput;
         this.infoFromInput = String(`"${this.titleInput}" by ${this.authorInput} has ${this.pagesInput} pages.`)
     } 
-    const book3 = new BookCard("example", "example", "555");
-    console.log("new book");
-    console.log(`${book3.infoFromInput}`);
+    // const book3 = new BookCard("example", "example", "555");
+    // console.log("new book");
+    // console.log(`${book3.infoFromInput}`);
+
 }
 
 newBookBtn.addEventListener("click", createNewBook);
