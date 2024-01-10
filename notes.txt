@@ -59,6 +59,27 @@ BookCard.prototype.createCard = function () {
 
 
 
+function Book(title, author, pages){
+  this.title = title;
+  this.author = author;
+  this.pages = pages;
+  this.info = String(`"${this.title}" by ${this.author} has ${this.pages} pages.`)
+  this.readStatus = function() {
+    const input = prompt(`Have you read ${this.title} yet?`);
+    console.log(`"Have you read ${this.title} yet?" ${input}.`);
+  };
+  return this.info;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 

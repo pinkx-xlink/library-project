@@ -93,13 +93,13 @@ function getUserInput() {
         this.titleInput = titleInput;
         this.authorInput = authorInput;
         this.pagesInput = pagesInput;
-    }
+    } 
 }
 
 newBookBtn.addEventListener("click", createNewBook);
 
-
 const submitFormBtn = document.querySelector("#submit-form");
 function submitBookForm() {
   getUserInput();
+  
 }
