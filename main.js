@@ -57,24 +57,25 @@ function createNewBook() {
     inputCard.setAttribute('id', 'inputCard');
     inputCard.classList.add('inputCard');
     inputCard.innerHTML = `
-    <div>did this work?</div>
-    <label> Title: 
-      <input type="text"/>
-    </label><br>
-    <label> Author: 
-      <input type="text"/>
-    </label><br>
-    <label> Pages: 
-      <input type="text"/>
-    </label><br>
-    <p> Have you read this book yet? <br>
-      <label for="yes"> Yes 
-        <input type="radio" value="yes" id="yes"/>
-      </label>
-      <label for="no"> Nope 
-        <input type="radio" value="no" id="no"/>
-      </label>
-    </p>
+      <div id="input-form">
+        <label> Title: 
+        <input type="text"/>
+        </label><br>
+        <label> Author: 
+        <input type="text"/>
+        </label><br>
+        <label> Pages: 
+        <input type="text"/>
+        </label><br>
+        <p> Have you read this book yet? <br>
+        <label for="yes"> Yes 
+            <input type="radio" value="yes" id="yes"/>
+        </label>
+        <label for="no"> Nope 
+            <input type="radio" value="no" id="no"/>
+        </label>
+        </p>
+      </div>
     `;
     h1.appendChild(inputCard)
 }
