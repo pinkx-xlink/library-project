@@ -86,7 +86,9 @@ function getUserInput() {
     const titleInput = document.getElementById('title_input').value;
     console.log(titleInput);
     const authorInput = document.getElementById("author_input").value;
+    console.log(authorInput);
     const pagesInput = document.getElementById("pages_input").value;
+    console.log(pagesInput);
 }
 
 newBookBtn.addEventListener("click", createNewBook);
