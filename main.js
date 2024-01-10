@@ -89,6 +89,17 @@ function getUserInput() {
     console.log(authorInput);
     const pagesInput = document.getElementById("pages_input").value;
     console.log(pagesInput);
+    function BookCard(titleInput, authorInput, pagesInput) {
+        this.titleInput = titleInput;
+        this.authorInput = authorInput;
+        this.pagesInput = pagesInput;
+        
+        const newBookCard = document.createElement('div');
+        newBookCard.setAttribute('id', 'newBookCard');
+        newBookCard.classList.add('newBookCard');
+        console.log('here.s the new book babe');
+
+    }
 }
 
 newBookBtn.addEventListener("click", createNewBook);
