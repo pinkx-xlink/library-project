@@ -37,3 +37,39 @@ newBookBtn.addEventListener("click", () => {
 
 
 
+
+    appendNewBook();
+}
+function appendNewBook() {
+  const newBookCard = document.createElement('div');
+  newBookCard.setAttribute('id', 'newBookCard');
+  newBookCard.classList.add('newBookCard');
+  console.log('here.s the new book babe');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
