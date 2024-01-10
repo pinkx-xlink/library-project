@@ -36,15 +36,11 @@ const shelf = document.querySelector('#shelf');
 
 function displayBook(myLibrary) {
   for (let i = 0; i < 3;) {
-    if (i < 3) {
       const newCard = document.createElement('div');
       newCard.setAttribute('id', 'new-card');
       newCard.innerHTML+= `<div>${Book.info}</div>`;
       shelf.appendChild(newCard);
       i++;
-    } else if (i > 3) {
-      console.log('thats all the books, kid.'); // does not log
-    };
   }
 }
 displayBook(myLibrary);
