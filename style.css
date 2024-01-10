@@ -19,7 +19,12 @@ body {
 }
 h1 {
     color: aliceblue;
-    
+
+}
+#inputCard {
+    border: 5px solid black;
+    font-size: small;
+    padding: 30px;
 }
 #shelf {
     display: flex;
