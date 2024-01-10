@@ -94,6 +94,11 @@ function getUserInput() {
         this.pagesInput = pagesInput;
         this.infoFromInput = String(`"${this.titleInput}" by ${this.authorInput} has ${this.pagesInput} pages.`)
     } 
+
+    const newBookCard = document.createElement('div');
+    newBookCard.setAttribute('id', 'newBookCard');
+    newBookCard.innerHTML = `<div> did this work? </div>`;
+    shelf.appendChild('newBookCard');
     // const book3 = new BookCard("example", "example", "555");
     // console.log("new book");
     // console.log(`${book3.infoFromInput}`);
