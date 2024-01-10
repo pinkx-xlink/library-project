@@ -98,13 +98,18 @@ function getUserInput () {
   newBookCard.setAttribute('id', 'newBookCard');
   newBookCard.innerHTML = `<div> did this work? </div>`;
   // shelf.appendChild('newBookCard');
+
   // const book3 = new BookCard("example", "example", "555");
   // console.log("new book");
   // console.log(`${book3.infoFromInput}`);
 }
 // the user's input console.logs onclick of Add Book Btn, 
 // but now I need that info to populate in an HTML Element
-// Get the userInput
+// Get the userInput X
+// BookCard can store the user's input X
+// make a function to populate this ^ input into an HTML form
+// store the new object ^ in the library,
+// where it will be run through a loop and displayed
 
 newBookBtn.addEventListener("click", createNewBook);
 
