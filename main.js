@@ -79,6 +79,9 @@ function createNewBook() {
         <button id="delete-form">Nevermind</button>
       </div>
     `;
+    // document.getElementById("input-form").onsubmit = function(event) {
+    //     event.preventDefault(); 
+    // };
   h1.appendChild(inputCard);
 }
 
@@ -94,6 +97,7 @@ function getUserInput() {
         this.authorInput = authorInput;
         this.pagesInput = pagesInput;
     } 
+
 }
 
 newBookBtn.addEventListener("click", createNewBook);
@@ -101,5 +105,4 @@ newBookBtn.addEventListener("click", createNewBook);
 const submitFormBtn = document.querySelector("#submit-form");
 function submitBookForm() {
   getUserInput();
-  
 }
