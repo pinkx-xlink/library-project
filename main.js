@@ -96,7 +96,7 @@ function appendNewBook() {
   newBookCard.setAttribute('id', 'newBookCard');
   newBookCard.classList.add('newBookCard');
   console.log('here.s the new book babe');
-  //newBookCard.innerHTML =
+  console.log(`title is ${titleInput}`);
 }
 
 newBookBtn.addEventListener("click", createNewBook);
