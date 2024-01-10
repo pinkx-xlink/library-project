@@ -59,13 +59,13 @@ function createNewBook() {
   inputCard.innerHTML = `
       <div id="input-form">
         <label> Title: 
-        <input type="text"/>
+        <input type="text", id="title_input"/>
         </label><br>
         <label> Author: 
-        <input type="text"/>
+        <input type="text", id="author_input"/>
         </label><br>
         <label> Pages: 
-        <input type="text"/>
+        <input type="text", id="pages_input"/>
         </label><br>
         <p> Have you read this book yet? <br>
         <label for="yes"> Yes 
@@ -81,6 +81,10 @@ function createNewBook() {
     `;
   h1.appendChild(inputCard);
 }
+const titleInput = document.getElementById("title_input");
+
+const authorInput = document.getElementById("author_input");
+const pagesInput = document.getElementById("pages_input");
 
 // dialog = document.getElementById('');
 newBookBtn.addEventListener("click", createNewBook);
@@ -88,6 +92,8 @@ newBookBtn.addEventListener("click", createNewBook);
 const submitFormBtn = document.querySelector("#submit-form");
 function submitBookForm() {
   console.log("testing");
-  console.log();
 }
+
+
+
 //submitFormBtn.addEventListener("click", submitBookForm);
