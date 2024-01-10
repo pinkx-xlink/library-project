@@ -14,10 +14,8 @@ function Book (title, author, pages) {
 
 const book1 = new Book('The Well of Loneliness', 'Radclyffe Hall', 399);
 book1.readStatus();
-
 const book2 = new Book('All the Bright places', 'Jennifer Niven', 416);
 book2.readStatus();
-
 
 Book.prototype.format = function addBookToLibrary () {
   // get user input
@@ -28,22 +26,21 @@ Book.prototype.format = function addBookToLibrary () {
 
 book1.format();
 myLibrary.push(book1);
-
 book2.format();
 myLibrary.push(book2);
 
 const shelf = document.querySelector('#shelf');
 
-function displayBook (myLibrary) {
-  for (let i = 0; i < 3;) {
-    const newCard = document.createElement('div');
-    newCard.setAttribute('id', 'new-card');
-    newCard.innerHTML+= `<div>${Book.info}</div>`;
-    shelf.appendChild(newCard);
-    i++;
-  }
-}
-displayBook(myLibrary);
+// function displayBook (myLibrary) {
+//   for (let i = 0; i < 3;) {
+//     const newCard = document.createElement('div');
+//     newCard.setAttribute('id', 'new-card');
+//     newCard.innerHTML+= `<div>${Book.info}</div>`;
+//     shelf.appendChild(newCard);
+//     i++;
+//   }
+// }
+// displayBook(myLibrary);
 
 const newBookBtn = document.querySelector('#new-book-btn');
 // newBookBtn.addEventListener("click", createNewBook);
@@ -88,17 +85,17 @@ function getUserInput () {
   console.log(authorInput);
   const pagesInput = document.getElementById("pages_input").value;
   console.log(pagesInput);
+  this.infoFromInput = String(`"${titleInput}" by ${authorInput} has ${pagesInput} pages.`);
+  console.log(infoFromInput);
   function BookCard (titleInput, authorInput, pagesInput) {
     this.titleInput = titleInput;
     this.authorInput = authorInput;
     this.pagesInput = pagesInput;
-    this.infoFromInput = String(`"${this.titleInput}" by ${this.authorInput} has ${this.pagesInput} pages.`)
   }
   const newBookCard = document.createElement('div');
   newBookCard.setAttribute('id', 'newBookCard');
   newBookCard.innerHTML = `<div> did this work? </div>`;
   // shelf.appendChild('newBookCard');
-
   // const book3 = new BookCard("example", "example", "555");
   // console.log("new book");
   // console.log(`${book3.infoFromInput}`);
