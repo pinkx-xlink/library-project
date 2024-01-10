@@ -57,9 +57,10 @@ function createNewBook() {
     inputCard.setAttribute('id', 'inputCard');
     inputCard.classList.add('inputCard');
     inputCard.innerHTML = `
-   
+    
     <div>did this work?</div>`;
     shelf.appendChild(inputCard)
 }
 
-const dialog = document.getElementById('show-dialog');
+const dialog = document.getElementById('');
+newBookBtn.addEventListener("click", createNewBook)
