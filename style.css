@@ -63,7 +63,7 @@ h1 {
 #new-card {
     background-image: linear-gradient(to top right, rgba(53, 36, 36, 0.363), rgb(51, 21, 21), rgb(54, 46, 30));
     color: rgb(248, 250, 215);
-    border-right: 5px double;
+    border-right: 3px double;
     border-radius: 4px;
     box-shadow: 30px 1px 4px;
     height: 300px;
