@@ -51,7 +51,7 @@ displayBook(myLibrary);
 
 const newBookBtn = document.querySelector('#new-book-btn');
 //newBookBtn.addEventListener("click", createNewBook);
-
+const h1 = document.querySelector('h1');
 function createNewBook() {
     const inputCard = document.createElement('div');
     inputCard.setAttribute('id', 'inputCard');
@@ -59,7 +59,7 @@ function createNewBook() {
     inputCard.innerHTML = `
     
     <div>did this work?</div>`;
-    shelf.appendChild(inputCard)
+    h1.appendChild(inputCard)
 }
 
 const dialog = document.getElementById('');
