@@ -12,11 +12,6 @@ function Book (title, author, pages) {
   return this.info;
 }
 
-// const book1 = new Book('The Well of Loneliness', 'Radclyffe Hall', 399);
-// book1.readStatus();
-// const book2 = new Book('All the Bright places', 'Jennifer Niven', 416);
-// book2.readStatus();
-
 // Book.prototype.format = function addBookToLibrary () {
 //   // get user input
 //   console.log(this);
