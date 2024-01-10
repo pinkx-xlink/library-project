@@ -60,13 +60,13 @@ function createNewBook() {
     <div>did this work?</div>
     <label> Title: 
       <input type="text"/>
-    </label>
+    </label><br>
     <label> Author: 
       <input type="text"/>
-    </label>
+    </label><br>
     <label> Pages: 
       <input type="text"/>
-    </label>
+    </label><br>
     <p> Have you read this book yet? <br>
       <label for="yes"> Yes 
         <input type="radio" value="yes" id="yes"/>
