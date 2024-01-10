@@ -89,6 +89,7 @@ function getUserInput() {
     console.log(authorInput);
     const pagesInput = document.getElementById("pages_input").value;
     console.log(pagesInput);
+    appendNewBook();
 }
 function appendNewBook() {
   const newBookCard = document.createElement('div');
