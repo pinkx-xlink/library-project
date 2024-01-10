@@ -37,6 +37,19 @@ h1 {
     align-items: center;
     margin: 5%;
 }
+#input-form > button {
+    border-style: none;
+    border-radius: 3px;
+    background-color: rgb(36, 10, 58);
+    color: aliceblue;
+    height: 26px;
+    width: 90px;
+    margin: 2px;
+}
+#input-form > button:hover {
+    background-color: black;
+    border-style: ridge;
+}
 #shelf {
     display: flex;
     flex-wrap: wrap;
