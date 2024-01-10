@@ -70,11 +70,13 @@ function createNewBook() {
         <p> Have you read this book yet? <br>
         <label for="yes"> Yes 
             <input type="radio" value="yes" id="yes"/>
-        </label>
+        </label><br>
         <label for="no"> Nope 
             <input type="radio" value="no" id="no"/>
         </label>
         </p>
+        <button type="submit" id="submit-form">Add Book</button>
+        <button id="delete-form">Nevermind</button>
       </div>
     `;
     h1.appendChild(inputCard)
