@@ -83,7 +83,6 @@ function getUserInput () {
 // where it will be run through a loop and displayed
 
 newBookBtn.addEventListener("click", createNewBook);
-const submitFormBtn = document.querySelector("#submit-form");
 function submitBookForm() {
   getUserInput();
 }
