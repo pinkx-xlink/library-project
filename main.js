@@ -59,11 +59,11 @@ function createNewBook () {
 }
 function getUserInput () {
   function Book (titleInput, authorInput, pagesInput) {
-    const titleInput = document.getElementById('title_input').value;
+    this.titleInput = document.getElementById('title_input').value;
     console.log(titleInput);
-    const authorInput = document.getElementById("author_input").value;
+    this.authorInput = document.getElementById("author_input").value;
     console.log(authorInput);
-    const pagesInput = document.getElementById("pages_input").value;
+    this.pagesInput = document.getElementById("pages_input").value;
     console.log(pagesInput);
     this.infoFromInput = String(`"${titleInput}" by ${authorInput} has ${pagesInput} pages.`);
     console.log(infoFromInput);
@@ -71,7 +71,7 @@ function getUserInput () {
   }
   function setUserInput() {
     const newBookCard = document.createElement('div');
-    newBookCard.classList.add(div);
+    newBookCard.classList.add('div');
     newBookCard.setAttribute('id', '#newBookCard');
     newBookCard.innerHTML+= `<p>did it work?</p>`;
     shelf.appendChild('newBookCard');
