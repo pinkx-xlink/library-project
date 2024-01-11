@@ -74,7 +74,7 @@ function getUserInput () {
   console.log(authorInput);
   const pagesInput = document.getElementById("pages_input").value;
   console.log(pagesInput);
-  this.infoFromInput = String(`"${titleInput}" by ${authorInput} has ${pagesInput} pages.`);
+  const infoFromInput = String(`"${titleInput}" by ${authorInput} has ${pagesInput} pages.`);
   console.log(infoFromInput);
   return this.infoFromInput;
 }
