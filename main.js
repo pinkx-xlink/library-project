@@ -1,6 +1,16 @@
 const myLibrary = [];
 
-
+function Book (title, author, pages) {
+  this.title = title;
+  this.author = author;
+  this.pages = pages;
+  this.info = String(`"${this.title}" by ${this.author} has ${this.pages} pages.`)
+  this.readStatus = function () {
+    const input = prompt(`Have you read ${this.title} yet?`);
+    console.log(`"Have you read ${this.title} yet?" ${input}.`);
+  };
+  return this.info;
+}
 // Book.prototype.format = function addBookToLibrary () {
 //   // get user input
 //   console.log(this);
@@ -58,33 +68,30 @@ function createNewBook () {
   h1.appendChild(inputCard);
 }
 function getUserInput () {
-  function Book (titleInput, authorInput, pagesInput) {
-    this.titleInput = document.getElementById('title_input').value;
-    console.log(titleInput);
-    this.authorInput = document.getElementById("author_input").value;
-    console.log(authorInput);
-    this.pagesInput = document.getElementById("pages_input").value;
-    console.log(pagesInput);
-    this.infoFromInput = String(`"${titleInput}" by ${authorInput} has ${pagesInput} pages.`);
-    console.log(infoFromInput);
-    return this.infoFromInput;
-  }
+  const titleInput = document.getElementById('title_input').value;
+  console.log(titleInput);
+  const authorInput = document.getElementById("author_input").value;
+  console.log(authorInput);
+  const pagesInput = document.getElementById("pages_input").value;
+  console.log(pagesInput);
+  this.infoFromInput = String(`"${titleInput}" by ${authorInput} has ${pagesInput} pages.`);
+  console.log(infoFromInput);
+  return this.infoFromInput;
   function setUserInput() {
     const newBookCard = document.createElement('div');
-    newBookCard.classList.add('div');
+    newBookCard.classList.add(div);
     newBookCard.setAttribute('id', '#newBookCard');
     newBookCard.innerHTML+= `<p>did it work?</p>`;
     shelf.appendChild('newBookCard');
-    
+    setUserInput();
   }
-  setUserInput();
 }
 // the user's input console.logs onclick of Add Book Btn, 
 // but now I need that info to populate in an HTML Element
 // Get the userInput X
 // BookCard can store the user's input X
 // make a function to populate this ^ input into an HTML form
-// store the new object ^ in the library array,
+// store the new object ^ in the library,
 // where it will be run through a loop and displayed
 
 newBookBtn.addEventListener("click", createNewBook);
