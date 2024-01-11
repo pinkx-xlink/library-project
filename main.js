@@ -77,6 +77,10 @@ function getUserInput () {
   this.infoFromInput = String(`"${titleInput}" by ${authorInput} has ${pagesInput} pages.`);
   console.log(infoFromInput);
   return this.infoFromInput;
+  function setUserInput() {
+    inputcard.innerHTML = `<p>did it work?</p>`;
+  }
+  setUserInput();
 }
 // the user's input console.logs onclick of Add Book Btn, 
 // but now I need that info to populate in an HTML Element
@@ -91,4 +95,5 @@ newBookBtn.addEventListener("click", createNewBook);
 const submitFormBtn = document.querySelector("#submit-form");
 function submitBookForm() {
   getUserInput();
+  
 }
