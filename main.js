@@ -1,16 +1,6 @@
 const myLibrary = [];
 
-function Book (title, author, pages) {
-  this.title = title;
-  this.author = author;
-  this.pages = pages;
-  this.info = String(`"${this.title}" by ${this.author} has ${this.pages} pages.`)
-  this.readStatus = function () {
-    const input = prompt(`Have you read ${this.title} yet?`);
-    console.log(`"Have you read ${this.title} yet?" ${input}.`);
-  };
-  return this.info;
-}
+
 // Book.prototype.format = function addBookToLibrary () {
 //   // get user input
 //   console.log(this);
@@ -68,17 +58,24 @@ function createNewBook () {
   h1.appendChild(inputCard);
 }
 function getUserInput () {
-  const titleInput = document.getElementById('title_input').value;
-  console.log(titleInput);
-  const authorInput = document.getElementById("author_input").value;
-  console.log(authorInput);
-  const pagesInput = document.getElementById("pages_input").value;
-  console.log(pagesInput);
-  this.infoFromInput = String(`"${titleInput}" by ${authorInput} has ${pagesInput} pages.`);
-  console.log(infoFromInput);
-  return this.infoFromInput;
+  function Book (titleInput, authorInput, pagesInput) {
+    const titleInput = document.getElementById('title_input').value;
+    console.log(titleInput);
+    const authorInput = document.getElementById("author_input").value;
+    console.log(authorInput);
+    const pagesInput = document.getElementById("pages_input").value;
+    console.log(pagesInput);
+    this.infoFromInput = String(`"${titleInput}" by ${authorInput} has ${pagesInput} pages.`);
+    console.log(infoFromInput);
+    return this.infoFromInput;
+  }
   function setUserInput() {
-    inputcard.innerHTML = `<p>did it work?</p>`;
+    const newBookCard = document.createElement('div');
+    newBookCard.classList.add(div);
+    newBookCard.setAttribute('id', '#newBookCard');
+    newBookCard.innerHTML+= `<p>did it work?</p>`;
+    shelf.appendChild('newBookCard');
+    
   }
   setUserInput();
 }
@@ -87,13 +84,11 @@ function getUserInput () {
 // Get the userInput X
 // BookCard can store the user's input X
 // make a function to populate this ^ input into an HTML form
-// store the new object ^ in the library,
+// store the new object ^ in the library array,
 // where it will be run through a loop and displayed
 
 newBookBtn.addEventListener("click", createNewBook);
-
 const submitFormBtn = document.querySelector("#submit-form");
 function submitBookForm() {
   getUserInput();
-  
 }
