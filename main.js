@@ -58,7 +58,7 @@ function createNewBook () {
             <input type="radio" value="no" id="no"/>
         </label>
         </p>
-        <button type="submit" id="submit-form", onclick="submitBookForm()">Add Book</button>
+        <button type="submit" id="submit-form", onclick="submitBookForm()", onclick="setUserInput()">Add Book</button>
         <button id="delete-form">Nevermind</button>
       </div>
     `;
@@ -77,14 +77,6 @@ function getUserInput () {
   this.infoFromInput = String(`"${titleInput}" by ${authorInput} has ${pagesInput} pages.`);
   console.log(infoFromInput);
   return this.infoFromInput;
-  function setUserInput() {
-    const newBookCard = document.createElement('div');
-    newBookCard.classList.add(div);
-    newBookCard.setAttribute('id', '#newBookCard');
-    newBookCard.innerHTML+= `<p>did it work?</p>`;
-    shelf.appendChild('newBookCard');
-    setUserInput();
-  }
 }
 // the user's input console.logs onclick of Add Book Btn, 
 // but now I need that info to populate in an HTML Element
