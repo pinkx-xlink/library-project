@@ -11,16 +11,15 @@ function Book (title, author, pages) {
   };
   return this.info;
 }
-// Book.prototype.format = function addBookToLibrary () {
+ Book.prototype.format = function addBookToLibrary () {
 //   // get user input
-//   console.log(this);
-//   return this.info;
+   console.log(this);
+   return this.info;
 //   // store this as a new Book obj into the array
-// };
+};
 // book1.format();
 // myLibrary.push(book1);
-// book2.format();
-// myLibrary.push(book2);
+
 const shelf = document.querySelector('#shelf');
 // function displayBook (myLibrary) {
 //   for (let i = 0; i < 3;) {
@@ -62,9 +61,6 @@ function createNewBook () {
         <button id="delete-form">Nevermind</button>
       </div>
     `;
-  // document.getElementById("input-form").onsubmit = function(event) {
-  //     event.preventDefault(); 
-  // };
   h1.appendChild(inputCard);
 }
 function getUserInput () {
