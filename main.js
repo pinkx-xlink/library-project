@@ -1,9 +1,9 @@
 const myLibrary = [1, 2, 3];
-const bookShelf = myLibrary.map(item => {
-  const container{};
-  container[item.titleInput] = item.titleInput;
-  container[item.authorInput] = item.authorInput;
-});
+// const bookShelf = myLibrary.map(item => {
+//   const container{};
+//   container[item.titleInput] = item.titleInput;
+//   container[item.authorInput] = item.authorInput;
+// });
  
 function Book (title, author, pages) {
   this.title = title;
