@@ -79,13 +79,7 @@ function getUserInput () {
   console.log(infoFromInput);
   return this.infoFromInput;
 }
-// the user's input console.logs onclick of Add Book Btn, 
-// but now I need that info to populate in an HTML Element
-// Get the userInput X
-// BookCard can store the user's input X
-// make a function to populate this ^ input into an HTML form
-// store the new object ^ in the library,
-// where it will be run through a loop and displayed
+
 
 newBookBtn.addEventListener("click", createNewBook);
 function submitBookForm() {
