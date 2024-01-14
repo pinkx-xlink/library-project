@@ -70,6 +70,14 @@ function getUserInput () {
   console.log(myLibrary);
   return this.infoFromInput;
 }
+// myLibrary.map(() => {
+//   return {
+//     const book = document.createElement('div'),
+//     book.classList.add('div'),
+//     book.setAttribute('id', '#book'),
+//     book.innerHTML = `<p>it work</p>`,
+//   }
+// });
 
 newBookBtn.addEventListener("click", createNewBook);
 function submitBookForm() {
