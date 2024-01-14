@@ -78,6 +78,9 @@ function getUserInput () {
 //     book.innerHTML = `<p>it work</p>`,
 //   }
 // });
+// const displayMyLibrary = myLibrary.map(myFunction);
+// function myFunction(myLibrary) {
+// }
 
 newBookBtn.addEventListener("click", createNewBook);
 function submitBookForm() {
