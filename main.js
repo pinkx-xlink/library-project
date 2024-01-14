@@ -85,4 +85,5 @@ function getUserInput () {
 newBookBtn.addEventListener("click", createNewBook);
 function submitBookForm() {
   getUserInput();
+  shelf.innerHTML += myLibrary;
 }
