@@ -22,8 +22,6 @@ function Book (title, author, pages) {
    return this.info;
 //   // store this as a new Book obj into the array
 };
-// book1.format();
-// myLibrary.push(book1);
 
 const shelf = document.querySelector('#shelf');
 // function displayBook (myLibrary) {
