@@ -68,19 +68,21 @@ function getUserInput () {
   console.log(infoFromInput);
   myLibrary.push(infoFromInput);
   console.log(myLibrary);
+  const addArrayItems = () => {
+    myLibrary.forEach(element => {
+      document.getElementById('shelf').innerHTML +=
+      `<div id="new-card">${infoFromInput}</div><br>`
+    });
+  };
+  addArrayItems();
   return this.infoFromInput;
 }
-const addArrayItems = () => {
-  myLibrary.forEach(element => {
-    document.getElementById('shelf').innerHTML +=
-    `<div id="new-card"></div><br>`
-  });
-};
+
 
 
 newBookBtn.addEventListener("click", createNewBook);
 function submitBookForm() {
   getUserInput();
-  addArrayItems();
+  //addArrayItems();
   //shelf.innerHTML += myLibrary;
 }
