@@ -1,4 +1,4 @@
-const myLibrary = [1, 2, 3];
+const myLibrary = [];
 // const bookShelf = myLibrary.map(item => {
 //   const container{};
 //   container[item.titleInput] = item.titleInput;
@@ -70,20 +70,17 @@ function getUserInput () {
   console.log(myLibrary);
   return this.infoFromInput;
 }
-// myLibrary.map(() => {
-//   return {
-//     const book = document.createElement('div'),
-//     book.classList.add('div'),
-//     book.setAttribute('id', '#book'),
-//     book.innerHTML = `<p>it work</p>`,
-//   }
-// });
-// const displayMyLibrary = myLibrary.map(myFunction);
-// function myFunction(myLibrary) {
-// }
+const addArrayItems = () => {
+  myLibrary.forEach(element => {
+    document.getElementById('shelf').innerHTML +=
+    `<div id="new-card"></div><br>`
+  });
+};
+
 
 newBookBtn.addEventListener("click", createNewBook);
 function submitBookForm() {
   getUserInput();
-  shelf.innerHTML += myLibrary;
+  addArrayItems();
+  //shelf.innerHTML += myLibrary;
 }
