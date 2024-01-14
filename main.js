@@ -77,9 +77,9 @@ function getUserInput () {
   console.log(pagesInput);
   const infoFromInput = String(`"${titleInput}" by ${authorInput} has ${pagesInput} pages.`);
   console.log(infoFromInput);
+  myLibrary.push(infoFromInput);
   return this.infoFromInput;
 }
-
 
 newBookBtn.addEventListener("click", createNewBook);
 function submitBookForm() {
