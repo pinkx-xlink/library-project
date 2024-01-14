@@ -24,16 +24,7 @@ function Book (title, author, pages) {
 };
 
 const shelf = document.querySelector('#shelf');
-// function displayBook (myLibrary) {
-//   for (let i = 0; i < 3;) {
-//     const newCard = document.createElement('div');
-//     newCard.setAttribute('id', 'new-card');
-//     newCard.innerHTML+= `<div>${Book.info}</div>`;
-//     shelf.appendChild(newCard);
-//     i++;
-//   }
-// }
-// displayBook(myLibrary);
+
 const newBookBtn = document.querySelector('#new-book-btn');
 // newBookBtn.addEventListener("click", createNewBook);
 const h1 = document.querySelector('h1');
