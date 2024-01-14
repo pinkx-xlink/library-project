@@ -5,23 +5,23 @@ const myLibrary = [1, 2, 3];
 //   container[item.authorInput] = item.authorInput;
 // });
  
-function Book (title, author, pages) {
-  this.title = title;
-  this.author = author;
-  this.pages = pages;
-  this.info = String(`"${this.title}" by ${this.author} has ${this.pages} pages.`)
-  this.readStatus = function () {
-    const input = prompt(`Have you read ${this.title} yet?`);
-    console.log(`"Have you read ${this.title} yet?" ${input}.`);
-  };
-  return this.info;
-}
- Book.prototype.format = function addBookToLibrary () {
-//   // get user input
-   console.log(this);
-   return this.info;
-//   // store this as a new Book obj into the array
-};
+// function Book (title, author, pages) {
+//   this.title = title;
+//   this.author = author;
+//   this.pages = pages;
+//   this.info = String(`"${this.title}" by ${this.author} has ${this.pages} pages.`)
+//   this.readStatus = function () {
+//     const input = prompt(`Have you read ${this.title} yet?`);
+//     console.log(`"Have you read ${this.title} yet?" ${input}.`);
+//   };
+//   return this.info;
+// }
+//  Book.prototype.format = function addBookToLibrary () {
+// //   // get user input
+//    console.log(this);
+//    return this.info;
+// //   // store this as a new Book obj into the array
+// };
 
 const shelf = document.querySelector('#shelf');
 
@@ -67,6 +67,7 @@ function getUserInput () {
   const infoFromInput = String(`"${titleInput}" by ${authorInput} has ${pagesInput} pages.`);
   console.log(infoFromInput);
   myLibrary.push(infoFromInput);
+  console.log(myLibrary);
   return this.infoFromInput;
 }
 
