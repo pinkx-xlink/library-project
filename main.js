@@ -61,6 +61,10 @@ function getUserInput () {
     const book = document.createElement('div');
     book.classList.add('div');
     shelf.appendChild(book);
+    function deleteBook() {
+      let removeBook = shelf.removeChild(book);
+    };
+    
       book.innerHTML +=
       `<div id="new-card">
         <p>${titleInput}</p><br>
@@ -68,10 +72,7 @@ function getUserInput () {
         <p>${pagesInput}</p><br>
         <p>${readStatus}</p>
         <button id="delete-book" onclick="deleteBook()"> X </button>
-      </div>`;
-      function deleteBook() {
-
-      }
+      </div>`
   };
   addArrayItems();
   return this.infoFromInput;
