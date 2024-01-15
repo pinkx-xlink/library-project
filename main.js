@@ -71,7 +71,11 @@ function getUserInput () {
   const addArrayItems = () => {
     myLibrary.forEach(element => {
       document.getElementById('shelf').innerHTML +=
-      `<div id="new-card">${infoFromInput}</div><br>`
+      `<div id="new-card">
+        <p>${titleInput}</p><br>
+        <p>${authorInput}</p><br>
+        <p>${pagesInput}</p><br>
+      </div><br>`
     });
   };
   addArrayItems();
