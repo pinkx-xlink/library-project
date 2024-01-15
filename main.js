@@ -19,13 +19,13 @@ function createNewBook () {
         <label> Pages: 
         <input type="text", id="pages_input"/>
         </label><br>
-        <p> Have you read this book yet? <br>
-        <label for="yes"> Yes 
-            <input type="radio" id="yes" name="radio" value="yes" id="yes"/>
-        </label><br>
-        <label for="no"> Nope 
-            <input type="radio" id="no" name="radio" value="no" id="no"/>
-        </label>
+        <p id="read-status"> Have you read this book yet? <br>
+          <label for="yes"> Yes 
+              <input type="radio" id="yes" name="radio" value="yes" id="yes"/>
+          </label><br>
+          <label for="no"> Nope 
+              <input type="radio" id="no" name="radio" value="no" id="no"/>
+          </label>
         </p>
         <button type="submit" id="submit-form", onclick="submitBookForm()", onclick="setUserInput()">Add Book</button>
         <button id="delete-form">Nevermind</button>

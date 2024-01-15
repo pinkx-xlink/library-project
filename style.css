@@ -1,9 +1,10 @@
 body {
-    font-family: "Inconsolata"
+    font-family: "Inconsolata";
+     background-image: radial-gradient(rgb(17, 17, 24), rgb(13, 12, 29), rgb(2, 2, 3));
     /* font-family: "Bitter" */
 }
 body {
-    background-image: radial-gradient(rgb(17, 17, 24), rgb(13, 12, 29), rgb(2, 2, 3));
+   
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -23,7 +24,6 @@ body {
 }
 h1 {
     color: aliceblue;
-
 }
 #inputCard {
     background-image: linear-gradient(to top right, rgba(17, 0, 255, 0.788), rgba(255, 192, 203, 0.651));
@@ -41,6 +41,9 @@ h1 {
     flex-direction: column;
     align-items: center;
     margin: 5%;
+}
+#read-status {
+    display: flex;
 }
 #input-form > button {
     border-style: none;
@@ -61,9 +64,8 @@ h1 {
     flex-wrap: wrap;
 }
 
-#new-card,
-#newBookCard {
-    background-image: linear-gradient(to top right, rgba(53, 36, 36, 0.363), rgb(51, 21, 21), rgb(54, 46, 30));
+#new-card {
+    background-image: linear-gradient(to top right, rgba(53, 36, 36, 0.363), rgb(51, 21, 21), rgb(54, 46, 30)); 
     color: rgb(248, 250, 215);
     border-right: 3px double;
     border-radius: 4px;
