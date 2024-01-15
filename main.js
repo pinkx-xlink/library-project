@@ -45,10 +45,10 @@ function createNewBook () {
         </label><br>
         <p> Have you read this book yet? <br>
         <label for="yes"> Yes 
-            <input type="radio" value="yes" id="yes"/>
+            <input type="radio" id="yes" name="radio" value="yes" id="yes"/>
         </label><br>
         <label for="no"> Nope 
-            <input type="radio" value="no" id="no"/>
+            <input type="radio" id="no" name="radio" value="no" id="no"/>
         </label>
         </p>
         <button type="submit" id="submit-form", onclick="submitBookForm()", onclick="setUserInput()">Add Book</button>
@@ -64,6 +64,15 @@ function getUserInput () {
   console.log(authorInput);
   const pagesInput = document.getElementById("pages_input").value;
   console.log(pagesInput);
+  function getReadStatus() {
+    if (document.getElementById('yes').checked == true ) {
+      console.log('yes');
+    } else {
+      console.log('nope');
+    }
+  }
+  getReadStatus();
+
   const infoFromInput = String(`"${titleInput}" by ${authorInput} has ${pagesInput} pages.`);
   console.log(infoFromInput);
   myLibrary.push(infoFromInput);
