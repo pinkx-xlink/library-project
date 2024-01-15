@@ -64,13 +64,16 @@ function getUserInput () {
   console.log(authorInput);
   const pagesInput = document.getElementById("pages_input").value;
   console.log(pagesInput);
-  const readStatus = getReadStatus();
+  let readStatus;
   function getReadStatus() {
     if (document.getElementById('yes').checked == true ) {
+      readStatus = 'Already read'
       console.log('Already read');
     } else {
+      readStatus = 'Not read yet'
       console.log('Not read yet');
     }
+    return readStatus;
   }
   getReadStatus();
 
