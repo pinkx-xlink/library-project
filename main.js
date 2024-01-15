@@ -58,13 +58,20 @@ function getUserInput () {
   myLibrary.push(infoFromInput);
   console.log(myLibrary);
   const addArrayItems = () => {
-      document.getElementById('shelf').innerHTML +=
+    const book = document.createElement('div');
+    book.classList.add('div');
+    shelf.appendChild(book);
+      book.innerHTML +=
       `<div id="new-card">
         <p>${titleInput}</p><br>
         <p>${authorInput}</p><br>
         <p>${pagesInput}</p><br>
         <p>${readStatus}</p>
-      </div>`
+        <button id="delete-book" onclick="deleteBook()"> X </button>
+      </div>`;
+      function deleteBook() {
+
+      }
   };
   addArrayItems();
   return this.infoFromInput;
