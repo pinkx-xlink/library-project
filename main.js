@@ -69,20 +69,16 @@ function getUserInput () {
   myLibrary.push(infoFromInput);
   console.log(myLibrary);
   const addArrayItems = () => {
-    myLibrary.forEach(element => {
       document.getElementById('shelf').innerHTML +=
       `<div id="new-card">
         <p>${titleInput}</p><br>
         <p>${authorInput}</p><br>
         <p>${pagesInput}</p><br>
-      </div><br>`
-    });
+      </div>`
   };
   addArrayItems();
   return this.infoFromInput;
 }
-
-
 
 newBookBtn.addEventListener("click", createNewBook);
 function submitBookForm() {
