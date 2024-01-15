@@ -62,6 +62,8 @@ h1 {
     color: white;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 65px;
 }
 
 #new-card {
@@ -76,5 +78,9 @@ h1 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 25px;
+}
+
+#delete-book-btn {
+    
+    color: purple;
 }

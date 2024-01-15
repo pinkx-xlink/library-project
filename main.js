@@ -74,6 +74,7 @@ function getUserInput () {
     deleteBookBtn.classList.add('button');
     book.appendChild(deleteBookBtn);
     deleteBookBtn.setAttribute('id', 'delete-book-btn');
+    deleteBookBtn.innerHTML = `X`;
     deleteBookBtn.addEventListener("click", deleteBook);
     function deleteBook() {
       let removeBook = shelf.removeChild(book);
