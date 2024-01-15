@@ -84,8 +84,17 @@ function getUserInput () {
   addArrayItems();
   return this.infoFromInput;
 }
+function clearInput() {
+  const titleInputBox = document.querySelector('#title_input');
+  const authorInputBox = document.querySelector('#author_input');
+  const pagesInputBox = document.querySelector('#pages_input');
+  titleInputBox.value = "";
+  authorInputBox.value = "";
+  pagesInputBox.value = "";
+}
 
 newBookBtn.addEventListener("click", createNewBook);
 function submitBookForm() {
   getUserInput();
+  clearInput();
 }
