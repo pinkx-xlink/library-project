@@ -32,6 +32,12 @@ function createNewBook () {
       </div>
     `;
   h1.appendChild(inputCard);
+  function deleteBookForm() {
+    let removeBookForm = h1.removeChild(inputCard);
+  };
+  const deleteBookFormBtn = document.querySelector('#delete-form');
+  deleteBookFormBtn.addEventListener("click", deleteBookForm);
+  
 }
 function getUserInput () {
   const titleInput = document.getElementById('title_input').value;
