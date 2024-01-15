@@ -68,7 +68,14 @@ function getUserInput () {
       <p>${authorInput}</p><br>
       <p>${pagesInput}</p><br>
       <p>${readStatus}</p>
-     
+      <p id="read-status"> Did you read it yet? <br>
+          <label for="yes"> Yes 
+              <input type="radio" id="yes" name="radio" value="yes" id="yes"/>
+          </label><br>
+          <label for="no"> Nope 
+              <input type="radio" id="no" name="radio" value="no" id="no"/>
+          </label>
+      </p>
     </div>`
     const deleteBookBtn = document.createElement('button');
     deleteBookBtn.classList.add('button');
