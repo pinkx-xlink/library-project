@@ -1,32 +1,8 @@
 const myLibrary = [];
-// const bookShelf = myLibrary.map(item => {
-//   const container{};
-//   container[item.titleInput] = item.titleInput;
-//   container[item.authorInput] = item.authorInput;
-// });
- 
-// function Book (title, author, pages) {
-//   this.title = title;
-//   this.author = author;
-//   this.pages = pages;
-//   this.info = String(`"${this.title}" by ${this.author} has ${this.pages} pages.`)
-//   this.readStatus = function () {
-//     const input = prompt(`Have you read ${this.title} yet?`);
-//     console.log(`"Have you read ${this.title} yet?" ${input}.`);
-//   };
-//   return this.info;
-// }
-//  Book.prototype.format = function addBookToLibrary () {
-// //   // get user input
-//    console.log(this);
-//    return this.info;
-// //   // store this as a new Book obj into the array
-// };
-
 const shelf = document.querySelector('#shelf');
 
 const newBookBtn = document.querySelector('#new-book-btn');
-// newBookBtn.addEventListener("click", createNewBook);
+
 const h1 = document.querySelector('h1');
 function createNewBook () {
   const inputCard = document.createElement('div');
@@ -97,6 +73,4 @@ function getUserInput () {
 newBookBtn.addEventListener("click", createNewBook);
 function submitBookForm() {
   getUserInput();
-  //addArrayItems();
-  //shelf.innerHTML += myLibrary;
 }
