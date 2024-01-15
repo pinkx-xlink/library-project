@@ -64,16 +64,17 @@ function getUserInput () {
   console.log(authorInput);
   const pagesInput = document.getElementById("pages_input").value;
   console.log(pagesInput);
+  const readStatus = getReadStatus();
   function getReadStatus() {
     if (document.getElementById('yes').checked == true ) {
-      console.log('yes');
+      console.log('Already read');
     } else {
-      console.log('nope');
+      console.log('Not read yet');
     }
   }
   getReadStatus();
 
-  const infoFromInput = String(`"${titleInput}" by ${authorInput} has ${pagesInput} pages.`);
+  const infoFromInput = String(`"${titleInput}" by ${authorInput} has ${pagesInput} pages. ${readStatus}`);
   console.log(infoFromInput);
   myLibrary.push(infoFromInput);
   console.log(myLibrary);
@@ -83,6 +84,7 @@ function getUserInput () {
         <p>${titleInput}</p><br>
         <p>${authorInput}</p><br>
         <p>${pagesInput}</p><br>
+        <p>${readStatus}</p>
       </div>`
   };
   addArrayItems();
