@@ -27,7 +27,7 @@ h1 {
 }
 #inputCard {
     background-image: linear-gradient(to top right, rgba(17, 0, 255, 0.788), rgba(255, 192, 203, 0.651));
-    border: 1px solid black;
+    border-right: 3px double;
     border-radius: 4px;
     font-size: small;
     height: 300px;
@@ -35,6 +35,7 @@ h1 {
     display: flex;
     align-items: center;
     margin: 7px;
+    box-shadow: 30px 1px 4px;
 }
 #input-form {
     display: flex;
