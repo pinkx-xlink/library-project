@@ -61,18 +61,24 @@ function getUserInput () {
     const book = document.createElement('div');
     book.classList.add('div');
     shelf.appendChild(book);
+    
+    book.innerHTML +=
+    `<div id="new-card">
+      <p>${titleInput}</p><br>
+      <p>${authorInput}</p><br>
+      <p>${pagesInput}</p><br>
+      <p>${readStatus}</p>
+     
+    </div>`
+    const deleteBookBtn = document.createElement('button');
+    deleteBookBtn.classList.add('button');
+    book.appendChild(deleteBookBtn);
+    deleteBookBtn.setAttribute('id', 'delete-book-btn');
+    deleteBookBtn.addEventListener("click", deleteBook);
     function deleteBook() {
       let removeBook = shelf.removeChild(book);
     };
     
-      book.innerHTML +=
-      `<div id="new-card">
-        <p>${titleInput}</p><br>
-        <p>${authorInput}</p><br>
-        <p>${pagesInput}</p><br>
-        <p>${readStatus}</p>
-        <button id="delete-book" onclick="deleteBook()"> X </button>
-      </div>`
   };
   addArrayItems();
   return this.infoFromInput;
