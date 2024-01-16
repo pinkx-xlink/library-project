@@ -70,9 +70,9 @@ function getUserInput () {
     
     book.innerHTML +=
     `<div id="new-card">
-      <p>${titleInput}</p><br>
-      <p>${authorInput}</p><br>
-      <p>${pagesInput}</p><br>
+      <p> Title: ${titleInput} </p><br>
+      <p> Author: ${authorInput} </p><br>
+      <p> Pages: ${pagesInput} </p><br>
       <p>${readStatus}</p>
       <p id="read-status"> Did you read it yet? <br>
           <label for="yes"> Yes 
