@@ -37,7 +37,6 @@ function createNewBook () {
   };
   const deleteBookFormBtn = document.querySelector('#delete-form');
   deleteBookFormBtn.addEventListener("click", deleteBookForm);
-  
 }
 function getUserInput () {
   const titleInput = document.getElementById('title_input').value;
