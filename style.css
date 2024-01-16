@@ -10,6 +10,13 @@ body {
     justify-content: center;
     align-items: center;
 }
+
+h1 {
+    color: aliceblue;
+    margin-bottom: 100px;
+    gap: 50px;
+}
+
 #new-book-btn {
     height: 70px;
     width: 100px;
@@ -22,11 +29,7 @@ body {
     background-color: rgb(20, 20, 20);
     box-shadow: 2px 3px 5px;
 }
-h1 {
-    color: aliceblue;
-    margin-bottom: 100px;
-    gap: 50px;
-}
+
 #form-div {
     color: aliceblue;
     margin-bottom: 100px;
@@ -82,7 +85,7 @@ h2 {
     gap: 65px;
 }
 
-#new-card {
+#new-book {
     background-image: linear-gradient(to top right, rgba(53, 36, 36, 0.363), rgb(51, 21, 21), rgb(54, 46, 30)); 
     color: rgb(248, 250, 215);
     border-right: 3px double;
@@ -94,6 +97,7 @@ h2 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 15px;
 }
 #book-card-read-status {
     display: flex;

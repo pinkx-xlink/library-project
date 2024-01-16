@@ -70,10 +70,10 @@ function getUserInput () {
     shelf.appendChild(book);
     
     book.innerHTML +=
-    `<div id="new-card">
-      <p> Title: ${titleInput} </p><br>
-      <p> Author: ${authorInput} </p><br>
-      <p> Pages: ${pagesInput} </p><br>
+    `<div id="new-book">
+      <p> Title: ${titleInput} </p>
+      <p> Author: ${authorInput} </p>
+      <p> Pages: ${pagesInput} </p>
       <p>${readStatus}</p>
       <p id="book-card-read-status">
           <label for="read"> Read 
