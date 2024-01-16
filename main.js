@@ -74,12 +74,12 @@ function getUserInput () {
       <p> Author: ${authorInput} </p><br>
       <p> Pages: ${pagesInput} </p><br>
       <p>${readStatus}</p>
-      <p id="read-status"> Did you read it yet? <br>
-          <label for="yes"> Yes 
-              <input type="radio" id="yes" name="radio" value="yes" id="yes"/>
+      <p id="book-card-read-status">
+          <label for="read"> Read 
+              <input type="radio" id="read" name="radio" value="read" id="read"/>
           </label><br>
-          <label for="no"> Nope 
-              <input type="radio" id="no" name="radio" value="no" id="no"/>
+          <label for="not-read"> Not read 
+              <input type="radio" id="not-read" name="radio" value="not-read" id="not-read"/>
           </label>
       </p>
     </div>`
