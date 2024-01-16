@@ -36,7 +36,7 @@ function createNewBook () {
   const deleteBookFormBtn = document.querySelector('#delete-form');
   deleteBookFormBtn.addEventListener("click", deleteBookForm);
   function deleteBookForm() {
-    let removeBookForm = h1.removeChild(inputCard);
+    let removeBookForm = formDiv.removeChild(inputCard);
   };
   
 }
