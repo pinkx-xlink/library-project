@@ -59,6 +59,9 @@ h1 {
     background-color: black;
     border-style: ridge;
 }
+h2 {
+    color: aliceblue;
+}
 #shelf {
     color: white;
     display: flex;
@@ -82,6 +85,10 @@ h1 {
 }
 
 #delete-book-btn {
-    
-    color: purple;
+    background-color: rgb(179, 3, 3);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    height: 25px;
+    width: 25px;
 }
