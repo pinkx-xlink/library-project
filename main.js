@@ -2,8 +2,6 @@ const myLibrary = [];
 const shelf = document.querySelector('#shelf');
 
 const newBookBtn = document.querySelector('#new-book-btn');
-
-const h1 = document.querySelector('h1');
 const formDiv = document.querySelector('#form-div');
 function createNewBook () {
   const inputCard = document.createElement('div');
@@ -34,26 +32,25 @@ function createNewBook () {
     `;
   formDiv.appendChild(inputCard);
   const deleteBookFormBtn = document.querySelector('#delete-form');
-  deleteBookFormBtn.addEventListener("click", deleteBookForm);
+  deleteBookFormBtn.addEventListener('click', deleteBookForm);
   function deleteBookForm() {
-    let removeBookForm = formDiv.removeChild(inputCard);
-  };
-  
+    const removeBookForm = formDiv.removeChild(inputCard);
+  }
 }
 function getUserInput () {
   const titleInput = document.getElementById('title_input').value;
   console.log(titleInput);
-  const authorInput = document.getElementById("author_input").value;
+  const authorInput = document.getElementById('author_input').value;
   console.log(authorInput);
-  const pagesInput = document.getElementById("pages_input").value;
+  const pagesInput = document.getElementById('pages_input').value;
   console.log(pagesInput);
   let readStatus;
   function getReadStatus() {
-    if (document.getElementById('yes').checked == true ) {
-      readStatus = 'Already read'
+    if (document.getElementById('yes').checked == true) {
+      readStatus = 'Already read';
       console.log('Already read');
     } else {
-      readStatus = 'Not read yet'
+      readStatus = 'Not read yet';
       console.log('Not read yet');
     }
     return readStatus;
@@ -68,7 +65,6 @@ function getUserInput () {
     const book = document.createElement('div');
     book.classList.add('div');
     shelf.appendChild(book);
-    
     book.innerHTML +=
     `<div id="new-book">
       <p> Title: ${titleInput} </p>
@@ -83,17 +79,16 @@ function getUserInput () {
               <input type="radio" id="not-read" name="radio" value="not-read" id="not-read"/>
           </label>
       </p>
-    </div>`
+    </div>`;
     const deleteBookBtn = document.createElement('button');
     deleteBookBtn.classList.add('button');
     book.appendChild(deleteBookBtn);
     deleteBookBtn.setAttribute('id', 'delete-book-btn');
-    deleteBookBtn.innerHTML = `X`;
-    deleteBookBtn.addEventListener("click", deleteBook);
+    deleteBookBtn.innerHTML = 'X';
+    deleteBookBtn.addEventListener('click', deleteBook);
     function deleteBook() {
-      let removeBook = shelf.removeChild(book);
-    };
-    
+      const removeBook = shelf.removeChild(book);
+    }
   };
   addArrayItems();
   return this.infoFromInput;
@@ -102,12 +97,12 @@ function clearInput() {
   const titleInputBox = document.querySelector('#title_input');
   const authorInputBox = document.querySelector('#author_input');
   const pagesInputBox = document.querySelector('#pages_input');
-  titleInputBox.value = "";
-  authorInputBox.value = "";
-  pagesInputBox.value = "";
+  titleInputBox.value = '';
+  authorInputBox.value = '';
+  pagesInputBox.value = '';
 }
 
-newBookBtn.addEventListener("click", createNewBook);
+newBookBtn.addEventListener('click', createNewBook);
 function submitBookForm() {
   getUserInput();
   clearInput();
