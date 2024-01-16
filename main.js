@@ -4,6 +4,7 @@ const shelf = document.querySelector('#shelf');
 const newBookBtn = document.querySelector('#new-book-btn');
 
 const h1 = document.querySelector('h1');
+const formDiv = document.querySelector('#form-div');
 function createNewBook () {
   const inputCard = document.createElement('div');
   inputCard.setAttribute('id', 'inputCard');
@@ -31,12 +32,13 @@ function createNewBook () {
         <button id="delete-form">Nevermind</button>
       </div>
     `;
-  h1.appendChild(inputCard);
+  formDiv.appendChild(inputCard);
+  const deleteBookFormBtn = document.querySelector('#delete-form');
+  deleteBookFormBtn.addEventListener("click", deleteBookForm);
   function deleteBookForm() {
     let removeBookForm = h1.removeChild(inputCard);
   };
-  const deleteBookFormBtn = document.querySelector('#delete-form');
-  deleteBookFormBtn.addEventListener("click", deleteBookForm);
+  
 }
 function getUserInput () {
   const titleInput = document.getElementById('title_input').value;

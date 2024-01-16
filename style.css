@@ -26,8 +26,14 @@ h1 {
     color: aliceblue;
     margin-bottom: 100px;
     gap: 50px;
+}
+#form-div {
+    color: aliceblue;
+    margin-bottom: 100px;
+    gap: 50px;
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
 }
 #inputCard {
     background-image: linear-gradient(to top right, rgba(17, 0, 255, 0.788), rgba(255, 192, 203, 0.651));
