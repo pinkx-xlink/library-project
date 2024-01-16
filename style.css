@@ -24,6 +24,10 @@ body {
 }
 h1 {
     color: aliceblue;
+    margin-bottom: 100px;
+    gap: 50px;
+    display: flex;
+    flex-wrap: wrap;
 }
 #inputCard {
     background-image: linear-gradient(to top right, rgba(17, 0, 255, 0.788), rgba(255, 192, 203, 0.651));
@@ -33,6 +37,7 @@ h1 {
     height: 300px;
     width: 200px;
     display: flex;
+
     align-items: center;
     margin: 7px;
     box-shadow: 30px 1px 4px;
@@ -61,6 +66,7 @@ h1 {
 }
 h2 {
     color: aliceblue;
+    margin-top: 70px;
 }
 #shelf {
     color: white;
