@@ -111,4 +111,9 @@ h2 {
     border-radius: 20px;
     height: 25px;
     width: 25px;
+    margin: 10px;
+}
+#delete-book-btn:hover {
+    background-color: rgb(78, 10, 10);
+    box-shadow: 1px 1px 1px;
 }
