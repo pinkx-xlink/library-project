@@ -41,17 +41,6 @@ function createNewBook () {
 }
 
 
-
-class Book {
-  constructor(title) {
-    this.title = title;
-  }
- 
-}
-let thisBook = new Book("My Book");
-
-
-
 function getUserInput () {
   const titleInput = document.getElementById('title_input').value;
   console.log(titleInput);
