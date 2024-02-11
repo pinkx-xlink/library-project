@@ -40,62 +40,63 @@ function createNewBook () {
   }
 }
 
-
-function getUserInput () {
-  const titleInput = document.getElementById('title_input').value;
-  console.log(titleInput);
-  const authorInput = document.getElementById('author_input').value;
-  console.log(authorInput);
-  const pagesInput = document.getElementById('pages_input').value;
-  console.log(pagesInput);
-  let readStatus;
-  function getReadStatus() {
-    if (document.getElementById('yes').checked == true) {
-      readStatus = 'Already read';
-      console.log('Already read');
-    } else {
-      readStatus = 'Not read yet';
-      console.log('Not read yet');
+let Book = class {
+   getUserInput () {
+    const titleInput = document.getElementById('title_input').value;
+    console.log(titleInput);
+    const authorInput = document.getElementById('author_input').value;
+    console.log(authorInput);
+    const pagesInput = document.getElementById('pages_input').value;
+    console.log(pagesInput);
+    let readStatus;
+    function getReadStatus() {
+      if (document.getElementById('yes').checked == true) {
+        readStatus = 'Already read';
+        console.log('Already read');
+      } else {
+        readStatus = 'Not read yet';
+        console.log('Not read yet');
+      }
+      return readStatus;
     }
-    return readStatus;
+    getReadStatus();
+
+    const infoFromInput = String(`"${titleInput}" by ${authorInput} has ${pagesInput} pages. ${readStatus}`);
+    console.log(infoFromInput);
+    myLibrary.push(infoFromInput);
+    console.log(myLibrary);
+    const addArrayItems = () => {
+      const book = document.createElement('div');
+      book.classList.add('div');
+      shelf.appendChild(book);
+      book.innerHTML +=
+      `<div id="new-book">
+        <p> Title: ${titleInput} </p>
+        <p> Author: ${authorInput} </p>
+        <p> Pages: ${pagesInput} </p>
+        <p>${readStatus}</p>
+        <p id="book-card-read-status">
+            <label for="read"> Read 
+                <input type="radio" id="read" name="radio" value="read" id="read"/>
+            </label><br>
+            <label for="not-read"> Not read 
+                <input type="radio" id="not-read" name="radio" value="not-read" id="not-read"/>
+            </label>
+        </p>
+      </div>`;
+      const deleteBookBtn = document.createElement('button');
+      deleteBookBtn.classList.add('button');
+      book.appendChild(deleteBookBtn);
+      deleteBookBtn.setAttribute('id', 'delete-book-btn');
+      deleteBookBtn.innerHTML = 'X';
+      deleteBookBtn.addEventListener('click', deleteBook);
+      function deleteBook() {
+        const removeBook = shelf.removeChild(book);
+      }
+    };
+    addArrayItems();
+    return this.infoFromInput;
   }
-  getReadStatus();
-
-  const infoFromInput = String(`"${titleInput}" by ${authorInput} has ${pagesInput} pages. ${readStatus}`);
-  console.log(infoFromInput);
-  myLibrary.push(infoFromInput);
-  console.log(myLibrary);
-  const addArrayItems = () => {
-    const book = document.createElement('div');
-    book.classList.add('div');
-    shelf.appendChild(book);
-    book.innerHTML +=
-    `<div id="new-book">
-      <p> Title: ${titleInput} </p>
-      <p> Author: ${authorInput} </p>
-      <p> Pages: ${pagesInput} </p>
-      <p>${readStatus}</p>
-      <p id="book-card-read-status">
-          <label for="read"> Read 
-              <input type="radio" id="read" name="radio" value="read" id="read"/>
-          </label><br>
-          <label for="not-read"> Not read 
-              <input type="radio" id="not-read" name="radio" value="not-read" id="not-read"/>
-          </label>
-      </p>
-    </div>`;
-    const deleteBookBtn = document.createElement('button');
-    deleteBookBtn.classList.add('button');
-    book.appendChild(deleteBookBtn);
-    deleteBookBtn.setAttribute('id', 'delete-book-btn');
-    deleteBookBtn.innerHTML = 'X';
-    deleteBookBtn.addEventListener('click', deleteBook);
-    function deleteBook() {
-      const removeBook = shelf.removeChild(book);
-    }
-  };
-  addArrayItems();
-  return this.infoFromInput;
 }
 function clearInput() {
   const titleInputBox = document.querySelector('#title_input');
