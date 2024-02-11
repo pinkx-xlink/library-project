@@ -43,7 +43,10 @@ class Book {
     }
   }
 }
-
+let myBook = new Book("book1");
+myBook.createNewBook();
+let anotherBook = new Book("me booook");
+anotherBook.createNewBook();
 
 function getUserInput () {
   const titleInput = document.getElementById('title_input').value;
