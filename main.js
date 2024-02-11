@@ -46,10 +46,10 @@ class Book {
   constructor(title) {
     this.title = title;
   }
-  getUserInput();
+ 
 }
 let thisBook = new Book("My Book");
-thisBook.getUserInput();
+
 
 
 function getUserInput () {
