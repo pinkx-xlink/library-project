@@ -282,7 +282,10 @@ function Book (title, author, pages) {
 
 
 
-
+let myBook = new Book("book1");
+myBook.createNewBook();
+let anotherBook = new Book("me booook");
+anotherBook.createNewBook();
 
 
 
