@@ -5,43 +5,46 @@ const newBookBtn = document.querySelector('#new-book-btn');
 const formDiv = document.querySelector('#form-div');
 
 class Book {
-  
-}
-
-function createNewBook () {
-  const inputCard = document.createElement('div');
-  inputCard.setAttribute('id', 'inputCard');
-  inputCard.classList.add('inputCard'); 
-  inputCard.innerHTML = `
-      <div id="input-form">
-        <label> Title: 
-        <input type="text", id="title_input"/>
-        </label><br>
-        <label> Author: 
-        <input type="text", id="author_input"/>
-        </label><br>
-        <label> Pages: 
-        <input type="text", id="pages_input"/>
-        </label><br>
-        <p id="read-status"> Have you read this book yet? <br>
-          <label for="yes"> Yes 
-              <input type="radio" id="yes" name="radio" value="yes" id="yes"/>
+  constructor(name) {
+    this.name = name;
+  }
+  createNewBook () {
+    const inputCard = document.createElement('div');
+    inputCard.setAttribute('id', 'inputCard');
+    inputCard.classList.add('inputCard'); 
+    inputCard.innerHTML = `
+        <div id="input-form">
+          <label> Title: 
+          <input type="text", id="title_input"/>
           </label><br>
-          <label for="no"> Nope 
-              <input type="radio" id="no" name="radio" value="no" id="no"/>
-          </label>
-        </p>
-        <button type="submit" id="submit-form", onclick="submitBookForm()", onclick="setUserInput()">Add Book</button>
-        <button id="delete-form">Nevermind</button>
-      </div>
-    `;
-  formDiv.appendChild(inputCard);
-  const deleteBookFormBtn = document.querySelector('#delete-form');
-  deleteBookFormBtn.addEventListener('click', deleteBookForm);
-  function deleteBookForm() {
-    const removeBookForm = formDiv.removeChild(inputCard);
+          <label> Author: 
+          <input type="text", id="author_input"/>
+          </label><br>
+          <label> Pages: 
+          <input type="text", id="pages_input"/>
+          </label><br>
+          <p id="read-status"> Have you read this book yet? <br>
+            <label for="yes"> Yes 
+                <input type="radio" id="yes" name="radio" value="yes" id="yes"/>
+            </label><br>
+            <label for="no"> Nope 
+                <input type="radio" id="no" name="radio" value="no" id="no"/>
+            </label>
+          </p>
+          <button type="submit" id="submit-form", onclick="submitBookForm()", onclick="setUserInput()">Add Book</button>
+          <button id="delete-form">Nevermind</button>
+        </div>
+      `;
+    formDiv.appendChild(inputCard);
+    const deleteBookFormBtn = document.querySelector('#delete-form');
+    deleteBookFormBtn.addEventListener('click', deleteBookForm);
+    function deleteBookForm() {
+      const removeBookForm = formDiv.removeChild(inputCard);
+    }
   }
 }
+
+
 function getUserInput () {
   const titleInput = document.getElementById('title_input').value;
   console.log(titleInput);
