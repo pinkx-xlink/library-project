@@ -3,6 +3,11 @@ const shelf = document.querySelector('#shelf');
 
 const newBookBtn = document.querySelector('#new-book-btn');
 const formDiv = document.querySelector('#form-div');
+
+class Book {
+  
+}
+
 function createNewBook () {
   const inputCard = document.createElement('div');
   inputCard.setAttribute('id', 'inputCard');
