@@ -6,7 +6,7 @@ const formDiv = document.querySelector('#form-div');
 function createNewBook () {
   const inputCard = document.createElement('div');
   inputCard.setAttribute('id', 'inputCard');
-  inputCard.classList.add('inputCard');
+  inputCard.classList.add('inputCard'); 
   inputCard.innerHTML = `
       <div id="input-form">
         <label> Title: 
