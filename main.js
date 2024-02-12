@@ -109,6 +109,7 @@ function clearInput() {
 
 newBookBtn.addEventListener('click', createNewBook);
 function submitBookForm() {
-  getUserInput();
+  // getUserInput();
+  new Book().getUserInput();
   clearInput();
 }
