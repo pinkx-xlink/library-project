@@ -29,6 +29,9 @@ h1 {
     background-color: rgb(20, 20, 20);
     box-shadow: 2px 3px 5px;
 }
+#new-book-btn:focus {
+    opacity: 0%;
+}
 
 #form-div {
     color: aliceblue;
