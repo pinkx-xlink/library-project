@@ -6,6 +6,7 @@ const formDiv = document.querySelector('#form-div');
 
 
 function createNewBook () {
+  document.body.removeChild(newBookBtn);
   const inputCard = document.createElement('div');
   inputCard.setAttribute('id', 'inputCard');
   inputCard.classList.add('inputCard'); 
