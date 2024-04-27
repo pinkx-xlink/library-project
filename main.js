@@ -111,6 +111,8 @@ function clearInput() {
 newBookBtn.addEventListener('click', createNewBook);
 function submitBookForm() {
   // getUserInput();
+  header.appendChild(newBookBtn);
   new Book().getUserInput();
   clearInput();
+  formDiv.removeChild(inputCard);
 }
