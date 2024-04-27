@@ -15,7 +15,7 @@ function getNewBookBtnStatus() {
   } else {
     newBookBtnStatus = 'Not clicked';
     console.log('Not clicked');
-  }  
+  }
   return newBookBtnStatus;
 }
 getNewBookBtnStatus();
