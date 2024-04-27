@@ -4,9 +4,24 @@ const shelf = document.querySelector('#shelf');
 const newBookBtn = document.querySelector('#new-book-btn');
 const formDiv = document.querySelector('#form-div');
 
+// NEEDS TROUBLESHOOT
+// make button toggle between active and inactive when clicked, 
+// make btn disappear when the blank book form is up, and reappear after the book is submitted
+let newBookBtnStatus;
+function getNewBookBtnStatus() {
+  if (document.querySelector('#new-book-btn').clicked == true) {
+    newBookBtnStatus = 'clicked';
+    console.log('clicked');
+  } else {
+    newBookBtnStatus = 'Not clicked';
+    console.log('Not clicked');
+  }
+  return newBookBtnStatus;
+}
+getNewBookBtnStatus();
 
 function createNewBook () {
-  document.body.removeChild(newBookBtn);
+  //document.body.removeChild(newBookBtn);
   const inputCard = document.createElement('div');
   inputCard.setAttribute('id', 'inputCard');
   inputCard.classList.add('inputCard'); 
@@ -42,7 +57,7 @@ function createNewBook () {
 }
 
 let Book = class {
-   getUserInput () {
+  getUserInput () {
     const titleInput = document.getElementById('title_input').value;
     console.log(titleInput);
     const authorInput = document.getElementById('author_input').value;
