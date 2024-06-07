@@ -14,7 +14,6 @@ body {
 h1 {
     color: aliceblue;
     margin-bottom: 100px;
-    gap: 50px;
 }
 
 #new-book-btn {
