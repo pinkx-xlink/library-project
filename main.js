@@ -24,11 +24,11 @@ function createNewBook () {
   //document.body.removeChild(newBookBtn);
   const inputCard = document.createElement('div');
   inputCard.setAttribute('id', 'inputCard');
-  inputCard.classList.add('inputCard'); 
+  inputCard.classList.add('inputCard');
   inputCard.innerHTML = `
       <div id="input-form">
         <label> Title: 
-        <input type="text", id="title_input"/>
+        <input type="text" id="title_input"/>
         </label><br>
         <label> Author: 
         <input type="text", id="author_input"/>
@@ -130,4 +130,12 @@ function submitBookForm() {
   new Book().getUserInput();
   clearInput();
   formDiv.removeChild(inputCard);
+  checkValidity();
+}
+function checkValidity(titleInput) {
+  if (titleInput == "") {
+    console.log('nah');
+  } else {
+    console.log('fine');
+  }
 }
