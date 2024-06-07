@@ -13,6 +13,10 @@ h1 {
     color: aliceblue;
     margin-bottom: 10px;
 }
+#container {
+    display: flex;
+    flex-direction: row;
+}
 #new-book-btn {
     height: 70px;
     width: 100px;
