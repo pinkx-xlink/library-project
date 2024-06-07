@@ -126,11 +126,11 @@ function clearInput() {
 newBookBtn.addEventListener('click', createNewBook);
 function submitBookForm() {
   // getUserInput();
-  header.appendChild(newBookBtn);
+  container.appendChild(newBookBtn);
   new Book().getUserInput();
   clearInput();
   container.removeChild(inputCard);
-  checkValidity();
+  // checkValidity();
 }
 // function checkValidity(titleInput) {
 //   if (titleInput == "") {
