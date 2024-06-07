@@ -45,7 +45,7 @@ function createNewBook () {
           </label>
         </p>
         <button type="submit" id="submit-form", onclick="submitBookForm()", onclick="setUserInput()">Add Book</button>
-        <button id="delete-form">Nevermind</button>
+        <button id="delete-form"> X </button>
       </div>
     `;
   container.appendChild(inputCard);
