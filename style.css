@@ -4,18 +4,15 @@ body {
     /* font-family: "Bitter" */
 }
 body {
-   
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-
 h1 {
     color: aliceblue;
-    margin-bottom: 100px;
+    margin-bottom: 10px;
 }
-
 #new-book-btn {
     height: 70px;
     width: 100px;
@@ -34,7 +31,7 @@ h1 {
 
 #form-div {
     color: aliceblue;
-    margin-bottom: 100px;
+    margin-bottom: 30px;
     gap: 50px;
     display: flex;
     flex-wrap: wrap;
