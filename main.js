@@ -2,7 +2,7 @@ const myLibrary = [];
 const shelf = document.querySelector('#shelf');
 
 const newBookBtn = document.querySelector('#new-book-btn');
-const formDiv = document.querySelector('#form-div');
+const container = document.querySelector('#container');
 
 // NEEDS TROUBLESHOOT
 // make button toggle between active and inactive when clicked, 
@@ -48,11 +48,11 @@ function createNewBook () {
         <button id="delete-form">Nevermind</button>
       </div>
     `;
-  formDiv.appendChild(inputCard);
+  container.appendChild(inputCard);
   const deleteBookFormBtn = document.querySelector('#delete-form');
   deleteBookFormBtn.addEventListener('click', deleteBookForm);
   function deleteBookForm() {
-    const removeBookForm = formDiv.removeChild(inputCard);
+    const removeBookForm = container.removeChild(inputCard);
   }
 }
 
@@ -129,7 +129,7 @@ function submitBookForm() {
   header.appendChild(newBookBtn);
   new Book().getUserInput();
   clearInput();
-  formDiv.removeChild(inputCard);
+  container.removeChild(inputCard);
   checkValidity();
 }
 // function checkValidity(titleInput) {
