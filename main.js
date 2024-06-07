@@ -132,10 +132,10 @@ function submitBookForm() {
   formDiv.removeChild(inputCard);
   checkValidity();
 }
-function checkValidity(titleInput) {
-  if (titleInput == "") {
-    console.log('nah');
-  } else {
-    console.log('fine');
-  }
-}
+// function checkValidity(titleInput) {
+//   if (titleInput == "") {
+//     console.log('nah');
+//   } else {
+//     console.log('fine');
+//   }
+// }
