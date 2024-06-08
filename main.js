@@ -28,7 +28,7 @@ function createNewBook () {
   inputCard.innerHTML = `
       <div id="input-form">
         <label> Title: 
-        <input type="text" id="title_input"/>
+        <input type="text" id="title_input" required minlength="1"/>
         </label><br>
         <label> Author: 
         <input type="text", id="author_input"/>
