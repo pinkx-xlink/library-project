@@ -65,6 +65,14 @@ let Book = class {
     const pagesInput = document.getElementById('pages_input').value;
     console.log(pagesInput);
     let readStatus;
+    function checkValidity() {
+      if (titleInput === '') {
+        console.log('wrong!');
+      } else {
+        console.log('good job')
+      }
+    }
+    titleInput.addEventListener('click', checkValidity());
     function getReadStatus() {
       if (document.getElementById('yes').checked == true) {
         readStatus = 'Already read';
