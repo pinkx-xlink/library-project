@@ -63,6 +63,7 @@ let Book = class {
     const pagesInput = document.getElementById('pages_input').value;
     console.log(pagesInput);
     let readStatus;
+    // move to a place where it only runs on submit btn click, so it creates a new book and doesn't run non stop when the input is valid.
     function checkValidity() {
       if (titleInput === '') {
         console.log('wrong!');
