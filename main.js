@@ -1,9 +1,7 @@
 const myLibrary = [];
 const shelf = document.querySelector('#shelf');
-
 const newBookBtn = document.querySelector('#new-book-btn');
 const container = document.querySelector('#container');
-
 // NEEDS TROUBLESHOOT
 // make button toggle between active and inactive when clicked, 
 // make btn disappear when the blank book form is up, and reappear after the book is submitted
@@ -72,6 +70,7 @@ let Book = class {
       } else {
         console.log('good job');
         document.getElementById('title_input').style.backgroundColor = 'white';
+        // addArrayItems();
       }
     }
     titleInput.addEventListener('click', checkValidity());
