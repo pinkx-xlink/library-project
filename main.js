@@ -71,6 +71,7 @@ let Book = class {
         console.log('good job');
         document.getElementById('title_input').style.backgroundColor = 'white';
         // addArrayItems();
+        // myLibrary.push(new Book());
       }
     }
     titleInput.addEventListener('click', checkValidity());
