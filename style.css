@@ -41,6 +41,9 @@ h1 {
     flex-wrap: wrap;
     flex-direction: row;
 }
+.invalid {
+    background-color: red;
+}
 #inputCard {
     background-image: linear-gradient(to top right, rgba(17, 0, 255, 0.788), rgba(255, 192, 203, 0.651));
     border-right: 3px double;

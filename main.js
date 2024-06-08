@@ -68,8 +68,10 @@ let Book = class {
     function checkValidity() {
       if (titleInput === '') {
         console.log('wrong!');
+        document.getElementById('title_input').style.backgroundColor = 'red';
       } else {
-        console.log('good job')
+        console.log('good job');
+        document.getElementById('title_input').style.backgroundColor = 'white';
       }
     }
     titleInput.addEventListener('click', checkValidity());
