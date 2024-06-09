@@ -68,16 +68,12 @@ let Book = class {
       if (titleInput === '') {
         console.log('wrong!');
         document.getElementById('title_input').style.backgroundColor = 'red';
+        
       } else {
         console.log('good job');
         document.getElementById('title_input').style.backgroundColor = 'white';
-        // addArrayItems();
-        // myLibrary.push(new Book());
-        // submitBookForm();
       }
     }
-    // document.getElementById('submit-form').addEventListener('click', checkValidity());
-    // abc.addEventListener('click', checkValidity());
     function getReadStatus() {
       if (document.getElementById('yes').checked == true) {
         readStatus = 'Already read';
