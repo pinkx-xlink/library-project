@@ -86,16 +86,15 @@ let Book = class {
         readStatus = 'Not read yet';
         console.log('Not read yet');
       }
-      
       return readStatus;
     }
     getReadStatus();
-
     const infoFromInput = String(`"${titleInput}" by ${authorInput} has ${pagesInput} pages. ${readStatus}`);
     console.log(infoFromInput);
     myLibrary.push(infoFromInput);
     console.log(myLibrary);
     const addArrayItems = () => {
+      checkValidity();
       const book = document.createElement('div');
       book.classList.add('div');
       shelf.appendChild(book);
