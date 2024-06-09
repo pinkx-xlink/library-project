@@ -92,28 +92,29 @@ let Book = class {
             // titleInput.setCustomValidity('ok');
             console.log('good job');
             document.getElementById('title_input').style.backgroundColor = 'white';
-            return true;
-        }
-      });
-      // checkValidity();
-      const book = document.createElement('div');
+            const book = document.createElement('div');
       book.classList.add('div');
       shelf.appendChild(book);
-      book.innerHTML +=
-      `<div id="new-book">
-        <p> Title: ${titleInput} </p>
-        <p> Author: ${authorInput} </p>
-        <p> Pages: ${pagesInput} </p>
-        <p>${readStatus}</p>
-        <p id="book-card-read-status">
-            <label for="read"> Read 
-                <input type="radio" id="read" name="radio" value="read" id="read"/>
-            </label><br>
-            <label for="not-read"> Not read 
-                <input type="radio" id="not-read" name="radio" value="not-read" id="not-read"/>
-            </label>
-        </p>
-      </div>`;
+      book.innerHTML =
+        `<div id="new-book">
+          <p> Title: ${titleInput} </p>
+          <p> Author: ${authorInput} </p>
+          <p> Pages: ${pagesInput} </p>
+          <p>${readStatus}</p>
+          <p id="book-card-read-status">
+              <label for="read"> Read 
+                  <input type="radio" id="read" name="radio" value="read" id="read"/>
+              </label><br>
+              <label for="not-read"> Not read 
+                  <input type="radio" id="not-read" name="radio" value="not-read" id="not-read"/>
+              </label>
+          </p>
+        </div>`;
+      return true;  
+      }
+    });
+      // checkValidity();
+      
       const deleteBookBtn = document.createElement('button');
       deleteBookBtn.classList.add('button');
       book.appendChild(deleteBookBtn);
