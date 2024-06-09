@@ -83,19 +83,19 @@ let Book = class {
     console.log(myLibrary);
     const addArrayItems = () => {
       myLibrary.forEach(element => {
-          if (titleInput === '') {
-            console.log('wrong!');
-            document.getElementById('title_input').style.backgroundColor = 'red';
-            // titleInput.setCustomValidity("STOP!");
-            return false;
-          } else {
-            // titleInput.setCustomValidity('ok');
-            console.log('good job');
-            document.getElementById('title_input').style.backgroundColor = 'white';
-            const book = document.createElement('div');
-      book.classList.add('div');
-      shelf.appendChild(book);
-      book.innerHTML =
+        if (titleInput === '') {
+          console.log('wrong!');
+          document.getElementById('title_input').style.backgroundColor = 'red';
+          // titleInput.setCustomValidity("STOP!");
+          return false;
+        } else {
+          // titleInput.setCustomValidity('ok');
+          console.log('good job');
+          document.getElementById('title_input').style.backgroundColor = 'white';
+          const book = document.createElement('div');
+          book.classList.add('div');
+          shelf.appendChild(book);
+          book.innerHTML =
         `<div id="new-book">
           <p> Title: ${titleInput} </p>
           <p> Author: ${authorInput} </p>
@@ -110,9 +110,9 @@ let Book = class {
               </label>
           </p>
         </div>`;
-      return true;  
-      }
-    });
+          return true;  
+        }
+      });
       // checkValidity();
       
       const deleteBookBtn = document.createElement('button');
