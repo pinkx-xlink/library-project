@@ -17,7 +17,6 @@ function getNewBookBtnStatus() {
   return newBookBtnStatus;
 }
 getNewBookBtnStatus();
-
 function createNewBook () {
   //document.body.removeChild(newBookBtn);
   const inputCard = document.createElement('div');
@@ -53,7 +52,6 @@ function createNewBook () {
     const removeBookForm = container.removeChild(inputCard);
   }
 }
-
 let Book = class {
   getUserInput () {
     const titleInput = document.getElementById('title_input').value;
@@ -63,9 +61,6 @@ let Book = class {
     const pagesInput = document.getElementById('pages_input').value;
     console.log(pagesInput);
     let readStatus;
-    // move to a place where it only runs on submit btn click, so it creates a new book and doesn't run non stop when the input is valid.
-    
-    
     function getReadStatus() {
       if (document.getElementById('yes').checked == true) {
         readStatus = 'Already read';
@@ -86,10 +81,8 @@ let Book = class {
         if (titleInput === '') {
           console.log('wrong!');
           document.getElementById('title_input').style.backgroundColor = 'red';
-          // titleInput.setCustomValidity("STOP!");
           return false;
         } else {
-          // titleInput.setCustomValidity('ok');
           console.log('good job');
           document.getElementById('title_input').style.backgroundColor = 'white';
           const book = document.createElement('div');
@@ -110,11 +103,9 @@ let Book = class {
               </label>
           </p>
         </div>`;
-          return true;  
+          return true;
         }
       });
-      // checkValidity();
-      
       const deleteBookBtn = document.createElement('button');
       deleteBookBtn.classList.add('button');
       book.appendChild(deleteBookBtn);
@@ -124,7 +115,6 @@ let Book = class {
       function deleteBook() {
         const removeBook = shelf.removeChild(book);
       }
-      
     };
     addArrayItems();
     return this.infoFromInput;
@@ -138,20 +128,10 @@ function clearInput() {
   authorInputBox.value = '';
   pagesInputBox.value = '';
 }
-
 newBookBtn.addEventListener('click', createNewBook);
 function submitBookForm() {
-  // getUserInput();
   container.appendChild(newBookBtn);
   new Book().getUserInput();
   clearInput();
   container.removeChild(inputCard);
-  // checkValidity();
 }
-// function checkValidity(titleInput) {
-//   if (titleInput == "") {
-//     console.log('nah');
-//   } else {
-//     console.log('fine');
-//   }
-// }
