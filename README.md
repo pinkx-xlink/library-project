@@ -10,3 +10,8 @@ I put some pizazz into the CSS in between building the JavaScript. I make the Bo
 The form that pops up when the "Add a new Book" button it clicked looks very clean and self explanitory, with tidy labels and textbooks for title, author, and pages as well as radio buttons for the read status of the book. The read/not read buttons don't toggle at the moment but that's a quick fix for later.
 I commented out the majority of the code I wrote yesterday in an attempt to switch from manually creating objects to creating them dynamically, but I've run into issues with trying to SET the info I get with from the input form. I tried firing a function to update the book card's inner HTML to the input when the form in submitted, and I tried appending a new element to the "shelf" div where the manually-created book cards were populating, but no luck. Tomorrow I'll be trying again to channel the input into a new Book constructor, and play with prototypes some more. 
 ~7 hours
+
+6/9/24
+To day I revisited this project to give it a little facelift, courtesy of The Odin Project: Form Validation with JavaScript lesson. 
+I added a very simple function/loop to check validity. It makes sure the form doesn't submit if the title input box is left empty, but if at least 1 character is entered, the form will submit.
+YAY! :tada:
