@@ -64,19 +64,8 @@ let Book = class {
     console.log(pagesInput);
     let readStatus;
     // move to a place where it only runs on submit btn click, so it creates a new book and doesn't run non stop when the input is valid.
-    function checkValidity() {
-      if (titleInput === '') {
-        console.log('wrong!');
-        document.getElementById('title_input').style.backgroundColor = 'red';
-        // titleInput.setCustomValidity("STOP!");
-        return false;
-      } else {
-        // titleInput.setCustomValidity('ok');
-        console.log('good job');
-        document.getElementById('title_input').style.backgroundColor = 'white';
-        return true;
-      }
-    }
+    
+    
     function getReadStatus() {
       if (document.getElementById('yes').checked == true) {
         readStatus = 'Already read';
@@ -93,7 +82,20 @@ let Book = class {
     myLibrary.push(infoFromInput);
     console.log(myLibrary);
     const addArrayItems = () => {
-      checkValidity();
+      myLibrary.forEach(element => {
+          if (titleInput === '') {
+            console.log('wrong!');
+            document.getElementById('title_input').style.backgroundColor = 'red';
+            // titleInput.setCustomValidity("STOP!");
+            return false;
+          } else {
+            // titleInput.setCustomValidity('ok');
+            console.log('good job');
+            document.getElementById('title_input').style.backgroundColor = 'white';
+            return true;
+        }
+      });
+      // checkValidity();
       const book = document.createElement('div');
       book.classList.add('div');
       shelf.appendChild(book);
