@@ -68,11 +68,13 @@ let Book = class {
       if (titleInput === '') {
         console.log('wrong!');
         document.getElementById('title_input').style.backgroundColor = 'red';
-        titleInput.setCustomValidity("STOP!");
+        // titleInput.setCustomValidity("STOP!");
+        return false;
       } else {
-        titleInput.setCustomValidity('ok');
+        // titleInput.setCustomValidity('ok');
         console.log('good job');
         document.getElementById('title_input').style.backgroundColor = 'white';
+        return true;
       }
     }
     function getReadStatus() {
