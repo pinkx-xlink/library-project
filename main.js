@@ -78,10 +78,14 @@ let Book = class {
     console.log(myLibrary);
     const addArrayItems = () => {
       myLibrary.forEach(element => {
+        // If the title input is blank, the form won't submit.
         if (titleInput === '') {
           console.log('wrong!');
           document.getElementById('title_input').style.backgroundColor = 'red';
           return false;
+          // If the form IS VALID, it will submit!
+          // ...however, the forEach loop makes an extra element with each iteration and could quickly get out of hand. 
+          // Needs refactored.
         } else {
           console.log('good job');
           document.getElementById('title_input').style.backgroundColor = 'white';
