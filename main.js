@@ -73,10 +73,11 @@ let Book = class {
         document.getElementById('title_input').style.backgroundColor = 'white';
         // addArrayItems();
         // myLibrary.push(new Book());
-        submitBookForm();
+        // submitBookForm();
       }
     }
-    titleInput.addEventListener('click', checkValidity());
+    // document.getElementById('submit-form').addEventListener('click', checkValidity());
+    // abc.addEventListener('click', checkValidity());
     function getReadStatus() {
       if (document.getElementById('yes').checked == true) {
         readStatus = 'Already read';
@@ -85,6 +86,7 @@ let Book = class {
         readStatus = 'Not read yet';
         console.log('Not read yet');
       }
+      
       return readStatus;
     }
     getReadStatus();
@@ -121,6 +123,7 @@ let Book = class {
       function deleteBook() {
         const removeBook = shelf.removeChild(book);
       }
+      
     };
     addArrayItems();
     return this.infoFromInput;
