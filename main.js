@@ -89,7 +89,7 @@ let Book = class {
           book.classList.add('div');
           shelf.appendChild(book);
           book.innerHTML =
-        `<div id="new-book">
+          `<div id="new-book">
           <p> Title: ${titleInput} </p>
           <p> Author: ${authorInput} </p>
           <p> Pages: ${pagesInput} </p>
@@ -102,7 +102,7 @@ let Book = class {
                   <input type="radio" id="not-read" name="radio" value="not-read" id="not-read"/>
               </label>
           </p>
-        </div>`;
+          </div>`;
           return true;
         }
       });
