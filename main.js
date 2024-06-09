@@ -68,8 +68,9 @@ let Book = class {
       if (titleInput === '') {
         console.log('wrong!');
         document.getElementById('title_input').style.backgroundColor = 'red';
-        
+        titleInput.setCustomValidity("STOP!");
       } else {
+        titleInput.setCustomValidity('ok');
         console.log('good job');
         document.getElementById('title_input').style.backgroundColor = 'white';
       }
